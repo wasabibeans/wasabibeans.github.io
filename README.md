@@ -1,1 +1,1 @@
-# taishogeniusbaby-tech.github.io
+# wasabibeans.github.io - WasabiBeans公式サポートページ
