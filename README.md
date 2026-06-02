@@ -1,21 +1,38 @@
-# wasabibeans.github.io
+# WasabiBeans GitHub Pages
 
-WasabiBeansの公式GitHub Pagesリポジトリです。
+このフォルダは、WasabiBeans の公開ホームページを管理する場所です。
+GitHub Pagesで公開される内容は、このフォルダのファイルから作られます。
 
-## 主要URL
+## 公開ページ
 
-| 表示名 | URL | 用途 |
+| 名前 | 公開URL | 用途 |
 |:---|:---|:---|
-| WasabiBeans 開発者ホームページ | https://wasabibeans.github.io/ | 開発ブランド全体の公式サイト |
-| WasabiBeans SNSリンク集 | https://wasabibeans.github.io/links/ | YouTube / TikTok / Instagram / X のプロフィールに貼るリンク |
-| HealthyMeal 公式サイト | https://wasabibeans.github.io/healthymeal/ | HealthyMeal専用の公式サイト |
-| HealthyMeal プライバシーポリシー | https://wasabibeans.github.io/healthymeal/privacy-policy.html | App Store審査・ユーザー案内 |
-| HealthyMeal 利用規約 | https://wasabibeans.github.io/healthymeal/terms-of-use.html | App Store審査・ユーザー案内 |
+| WasabiBeans 開発者ホームページ | https://wasabibeans.github.io/ | ブランド全体とアプリ一覧 |
+| WasabiBeans SNSリンク集 | https://wasabibeans.github.io/links/ | YouTube / TikTok / Instagram / X のプロフィールに貼る1本のリンク |
+| HealthyMeal 公式サイト | https://wasabibeans.github.io/healthymeal/ | HealthyMealの紹介ページ |
+| HealthyMeal プライバシーポリシー | https://wasabibeans.github.io/healthymeal/privacy-policy.html | データの扱い |
+| HealthyMeal 利用規約 | https://wasabibeans.github.io/healthymeal/terms-of-use.html | 利用条件 |
 | HealthyMeal サポートページ | https://wasabibeans.github.io/healthymeal/support.html | FAQと不具合報告 |
-| MemeClash 公式サイト | https://wasabibeans.github.io/memeclash/ | MemeClash専用の公式サイト |
-| MemeClash プライバシーポリシー | https://wasabibeans.github.io/memeclash/privacy-policy.html | App Store審査・ユーザー案内 |
-| MemeClash 利用規約 | https://wasabibeans.github.io/memeclash/terms-of-use.html | App Store審査・ユーザー案内 |
+| MemeClash 公式サイト | https://wasabibeans.github.io/memeclash/ | MemeClashの紹介ページ |
+| MemeClash プライバシーポリシー | https://wasabibeans.github.io/memeclash/privacy-policy.html | データの扱い |
+| MemeClash 利用規約 | https://wasabibeans.github.io/memeclash/terms-of-use.html | 利用条件 |
 | MemeClash サポートページ | https://wasabibeans.github.io/memeclash/support.html | FAQと不具合報告 |
 
-SNSプロフィールには、原則として `WasabiBeans SNSリンク集` だけを貼ります。
-GitHub Issuesは各アプリのサポートページ内で `不具合報告フォーム` として案内します。
+## フォルダの見方
+
+| 場所 | 中身 |
+|:---|:---|
+| `index.html` | WasabiBeans 開発者ホームページ |
+| `links/` | SNSプロフィール用リンク集 |
+| `healthymeal/` | HealthyMealの公式サイト、規約、サポート |
+| `memeclash/` | MemeClashの公式サイト、規約、サポート |
+| `assets/` | サイトで使う画像、動画、アイコン |
+| `app-ads.txt` | AdMob用ファイル |
+
+## 運用ルール
+
+- SNSプロフィールには `WasabiBeans SNSリンク集` だけを貼ります。
+- アプリごとの公式ページは、必ず `healthymeal/` や `memeclash/` のようなアプリ別フォルダに置きます。
+- root直下に `privacy.html`、`support.html`、`terms.html`、`links.html` は作りません。ページが2つずつ見えて混乱するためです。
+- GitHub Issuesは、各アプリのサポートページ内で `不具合報告フォーム` として案内します。
+- 個人メールアドレスは公開しません。

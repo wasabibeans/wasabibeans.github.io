@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>HealthyMeal 公式サイト</title>
-<meta name="description" content="HealthyMeal - AI健康献立と初心者筋トレ管理 の公式サイト。食事、筋トレ、水分、ヘルスケア連携をまとめるiOSアプリ。">
+<meta name="description" content="HealthyMeal - AI健康献立と初心者筋トレ管理 の公式サイト。献立、筋トレ、水分、体重記録をまとめて続けやすくするiPhoneアプリ。">
 <style>
 *{box-sizing:border-box}
 :root{--ink:#142015;--muted:#5a6655;--green:#2fcf69;--deep:#0f2719;--cream:#f7f8ef;--line:#dfe8d8;--orange:#ff8a2a;--blue:#16aee5}
@@ -21,7 +21,7 @@ a{color:inherit}
 .eyebrow{font-size:12px;color:#537034;font-weight:900;letter-spacing:.08em;text-transform:uppercase;margin:0 0 12px}
 .name{font-size:clamp(38px,6vw,76px);line-height:1.04;margin:0 0 12px;letter-spacing:0;overflow-wrap:anywhere;word-break:break-all;line-break:anywhere}
 .subtitle{font-size:clamp(18px,2.5vw,27px);font-weight:900;color:#263b23;margin:0 0 18px;overflow-wrap:anywhere;word-break:break-all;line-break:anywhere}
-.lead{font-size:17px;color:var(--muted);max-width:660px;margin:0;overflow-wrap:anywhere;word-break:break-all;line-break:anywhere}
+.lead{font-size:17px;color:var(--muted);max-width:660px;margin:0;overflow-wrap:normal;word-break:normal;line-break:strict}
 .actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
 .btn{display:inline-flex;align-items:center;justify-content:center;text-decoration:none;border-radius:999px;padding:12px 17px;border:1px solid rgba(30,48,24,.18);font-weight:850;color:#213019;background:#fff;min-height:46px;overflow-wrap:anywhere}
 .btn.primary{background:var(--deep);color:#f8faef;border-color:var(--deep)}
@@ -39,7 +39,7 @@ a{color:inherit}
 .shot-card{margin:0;background:#fff;border:1px solid var(--line);border-radius:8px;overflow:hidden;box-shadow:0 15px 42px rgba(35,55,31,.08)}
 .shot-card img{display:block;width:100%;height:auto}.shot-card figcaption{font-weight:850;font-size:13px;padding:12px 12px 14px;color:#263b23}
 .video-panel{display:grid;grid-template-columns:minmax(0,.95fr) minmax(300px,1.05fr);gap:34px;align-items:center}
-.preview-video{width:100%;border-radius:24px;background:#111;box-shadow:0 24px 70px rgba(23,42,26,.24)}
+.preview-video{width:min(360px,100%);max-height:720px;justify-self:center;border-radius:24px;background:#111;box-shadow:0 24px 70px rgba(23,42,26,.24)}
 .feature-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
 .feature{background:#fff;border:1px solid var(--line);border-radius:8px;padding:22px;box-shadow:0 12px 30px rgba(35,55,31,.05)}
 .feature h3{margin:0 0 8px;font-size:18px}.feature p{margin:0;color:var(--muted)}
@@ -64,15 +64,15 @@ a{color:inherit}
 <p class="eyebrow">iOS App</p>
 <h1 class="name">HealthyMeal</h1>
 <p class="subtitle">AI健康献立と初心者筋トレ管理</p>
-<p class="lead">食事を決める、体を動かす、記録する。毎日の健康管理で迷いやすいところを、ひとつのアプリで見える形に整えます。</p>
+<p class="lead">献立を考えるのが面倒な日も、少しだけ体を動かしたい日も。HealthyMealは、食事・筋トレ・記録をまとめて、健康管理を続けやすくするiPhoneアプリです。</p>
 <div class="actions">
-<a class="btn primary" href="https://apps.apple.com/app/id6769673379">HealthyMeal App Storeページ</a>
+<a class="btn primary" href="https://apps.apple.com/app/id6769673379">App Storeで見る</a>
 <a class="btn" href="/healthymeal/support.html">HealthyMeal サポートページ</a>
 </div>
 <div class="value-strip" aria-label="HealthyMealの価値">
-<div class="value"><b>食事が決まる</b><span>体に合わせた献立提案</span></div>
-<div class="value"><b>運動が始めやすい</b><span>初心者向け筋トレ管理</span></div>
-<div class="value"><b>記録が続く</b><span>水分・体重・買い物まで整理</span></div>
+<div class="value"><b>献立で悩まない</b><span>今日の食事候補をすばやく提案</span></div>
+<div class="value"><b>運動を始めやすい</b><span>初心者向けの筋トレから開始</span></div>
+<div class="value"><b>記録が自然に残る</b><span>水分・体重・買い物まで整理</span></div>
 </div>
 </div>
 <div class="hero-media" aria-label="HealthyMealのApp Store掲載画像">
@@ -85,9 +85,9 @@ a{color:inherit}
 <main>
 <section class="section">
 <div class="inner">
-<p class="eyebrow">App Store Preview</p>
-<h2>アプリの価値を、画面で一目で伝える。</h2>
-<p class="section-lead">App Store掲載用の宣伝画像をそのまま活かし、献立、筋トレ、記録、買い物、プロフィールまでの流れを見えるようにしました。</p>
+<p class="eyebrow">What You Can Do</p>
+<h2>毎日の健康管理を、ひとつの流れに。</h2>
+<p class="section-lead">献立を決める、筋トレを始める、水分や体重を記録する。バラバラになりがちな健康習慣を、HealthyMealの中でまとめて見られます。</p>
 <div class="shots">
 <figure class="shot-card"><img src="/assets/healthymeal-appstore-01.png" alt="食事が決まる宣伝画像"><figcaption>食事が決まる</figcaption></figure>
 <figure class="shot-card"><img src="/assets/healthymeal-appstore-02.png" alt="筋トレが続く宣伝画像"><figcaption>筋トレが続く</figcaption></figure>
@@ -101,24 +101,24 @@ a{color:inherit}
 <section class="section">
 <div class="inner video-panel">
 <div>
-<p class="eyebrow">Preview Video</p>
-<h2>短い動画でも、できることが伝わる。</h2>
-<p class="section-lead">献立提案から筋トレ、記録までの体験を、App Store提出用プレビュー動画で確認できます。</p>
+<p class="eyebrow">Short Demo</p>
+<h2>迷う時間を減らして、今日の行動に変える。</h2>
+<p class="section-lead">短いデモ動画で、食事決め、筋トレ、記録の流れをサクッと見られます。</p>
 <div class="feature-grid">
-<div class="feature accent-one"><h3>AI献立提案</h3><p>今日の食事を決める時間を減らし、栄養の見通しを立てやすくします。</p></div>
-<div class="feature accent-two"><h3>初心者筋トレ</h3><p>いきなり難しいメニューにせず、続けやすい運動の入口を作ります。</p></div>
-<div class="feature accent-three"><h3>記録と買い物</h3><p>水分、体重、買い物リストをまとめ、毎日の健康管理を軽くします。</p></div>
+<div class="feature accent-one"><h3>食事が決まる</h3><p>「何を食べよう」を減らし、目標に合わせた献立候補を見つけやすくします。</p></div>
+<div class="feature accent-two"><h3>運動のハードルを下げる</h3><p>初心者でも始めやすい筋トレで、少しずつ体を動かすきっかけを作ります。</p></div>
+<div class="feature accent-three"><h3>続いた日が見える</h3><p>水分、体重、買い物リストをまとめて、毎日の変化を見逃さないようにします。</p></div>
 </div>
 </div>
-<video class="preview-video" src="/assets/healthymeal-preview.mp4" controls muted playsinline preload="metadata" poster="/assets/healthymeal-appstore-01.png"></video>
+<video class="preview-video" src="/assets/healthymeal-sns-promo.mp4" controls muted playsinline preload="metadata" poster="/assets/healthymeal-appstore-01.png"></video>
 </div>
 </section>
 
 <section class="section legal">
 <div class="inner">
-<p class="eyebrow">HealthyMeal Links</p>
-<h2>審査・サポート用URL</h2>
-<p class="section-lead">App Store Connectに入力する公式ページです。リンク名は用途が分かるように分けています。</p>
+<p class="eyebrow">Support</p>
+<h2>安心して使うためのページ</h2>
+<p class="section-lead">データの扱い、利用条件、困った時の連絡先をまとめています。</p>
 <div class="legal-grid">
 <a class="legal-card" href="/healthymeal/privacy-policy.html"><h3>HealthyMeal プライバシーポリシー</h3><p>データの扱い、第三者サービス、ユーザーの権利。</p></a>
 <a class="legal-card" href="/healthymeal/terms-of-use.html"><h3>HealthyMeal 利用規約</h3><p>利用条件、免責事項、サブスクリプション。</p></a>

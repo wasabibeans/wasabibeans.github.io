@@ -19,7 +19,7 @@ a{color:inherit}
 .nav-links{display:flex;gap:10px;flex-wrap:wrap;justify-content:flex-end}.nav-links a{font-size:13px;text-decoration:none;border:1px solid var(--line);border-radius:999px;padding:8px 12px;background:rgba(255,255,255,.08);font-weight:780}
 .hero-inner{max-width:1140px;margin:0 auto;padding:54px 22px 90px;position:relative;z-index:1;display:grid;grid-template-columns:minmax(0,650px) minmax(250px,360px);gap:44px;align-items:center}
 .eyebrow{font-size:12px;color:#ffd08f;font-weight:900;letter-spacing:.08em;text-transform:uppercase;margin:0 0 12px}
-h1{font-size:clamp(44px,7vw,86px);line-height:1;margin:0 0 14px;letter-spacing:0;overflow-wrap:anywhere;word-break:break-all;line-break:anywhere}.subtitle{font-size:clamp(18px,2.7vw,28px);font-weight:900;margin:0 0 18px;color:#fff3dc;overflow-wrap:anywhere;word-break:break-all;line-break:anywhere}.lead{font-size:17px;color:var(--muted);max-width:650px;margin:0;overflow-wrap:anywhere;word-break:break-all;line-break:anywhere}
+h1{font-size:clamp(44px,7vw,86px);line-height:1;margin:0 0 14px;letter-spacing:0;overflow-wrap:anywhere;word-break:break-all;line-break:anywhere}.subtitle{font-size:clamp(18px,2.7vw,28px);font-weight:900;margin:0 0 18px;color:#fff3dc;overflow-wrap:anywhere;word-break:break-all;line-break:anywhere}.lead{font-size:17px;color:var(--muted);max-width:650px;margin:0;overflow-wrap:normal;word-break:normal;line-break:strict}
 .actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}.btn{display:inline-flex;align-items:center;justify-content:center;text-decoration:none;border-radius:999px;padding:12px 17px;border:1px solid var(--line);font-weight:850;color:var(--ink);background:rgba(255,255,255,.1);min-height:46px;backdrop-filter:blur(8px);overflow-wrap:anywhere}.btn.primary{background:var(--orange);color:#17110b;border-color:var(--orange)}
 .hero-icon{width:min(300px,80vw);margin:auto;border-radius:30px;box-shadow:0 28px 90px rgba(0,0,0,.48);transform:rotate(2deg)}
 .value-strip{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:34px;max-width:720px}.value{border:1px solid var(--line);background:rgba(255,255,255,.09);border-radius:8px;padding:14px;backdrop-filter:blur(8px)}.value b{display:block;font-size:15px;color:#fff}.value span{display:block;color:#cfc9bc;font-size:13px}
@@ -48,8 +48,8 @@ h1{font-size:clamp(44px,7vw,86px);line-height:1;margin:0 0 14px;letter-spacing:0
 <p class="subtitle">クセの強いキャラで、テンポよく戦う。</p>
 <p class="lead">ミームキャラクターたちが、属性、確率、必殺技でぶつかり合うカジュアル3Dバトルゲーム。短時間でも勝負が動く、軽く遊べるiPhone向けゲームです。</p>
 <div class="actions">
-<a class="btn primary" href="/memeclash/support.html">MemeClash サポートページ</a>
-<a class="btn" href="/memeclash/privacy-policy.html">MemeClash プライバシーポリシー</a>
+<a class="btn primary" href="/memeclash/support.html">サポートを見る</a>
+<a class="btn" href="/memeclash/privacy-policy.html">プライバシーを確認</a>
 </div>
 <div class="value-strip" aria-label="MemeClashの価値">
 <div class="value"><b>すぐ戦える</b><span>直感的なコマンド選択</span></div>
@@ -64,9 +64,9 @@ h1{font-size:clamp(44px,7vw,86px);line-height:1;margin:0 0 14px;letter-spacing:0
 <main>
 <section class="section">
 <div class="inner">
-<p class="eyebrow">Game Value</p>
-<h2>一目で分かる、軽快な3Dバトル。</h2>
-<p class="section-lead">MemeClashは、複雑な説明を読まなくても遊び始められるテンポを重視しています。短い時間で勝負が動き、キャラの個性で毎回ちょっと違う展開になります。</p>
+<p class="eyebrow">Why Play</p>
+<h2>短い時間で、ちゃんと盛り上がる。</h2>
+<p class="section-lead">MemeClashは、気軽に始められる3Dバトルゲームです。クセのあるキャラ、確率で動く勝負、次を試したくなる解放要素で、1プレイの中にちょっとした山場を作ります。</p>
 <div class="feature-grid">
 <div class="feature orange"><h3>3Dバトル演出</h3><p>木製キャラや個性ある相手が、コミカルな動きでぶつかります。</p></div>
 <div class="feature teal"><h3>属性と確率</h3><p>相性、スタン、ギャンブルムーブで、短い対戦にも山場を作ります。</p></div>
@@ -81,26 +81,26 @@ h1{font-size:clamp(44px,7vw,86px);line-height:1;margin:0 0 14px;letter-spacing:0
 <img src="/assets/memeclash-hero.png" alt="MemeClashの3Dバトルを表すキービジュアル">
 </figure>
 <div class="stack">
-<p class="eyebrow">Visual Direction</p>
-<h2>ゲームらしい勢いを、公式サイトにも。</h2>
-<div class="mini"><h3>カジュアルに見える</h3><p>硬い説明ではなく、キャラクターとステージの絵で遊びの雰囲気を先に伝えます。</p></div>
-<div class="mini"><h3>短時間プレイ向け</h3><p>iPhoneで軽く遊ぶゲームとして、テンポ、勝負の変化、キャラの楽しさを中心にしています。</p></div>
-<div class="mini"><h3>ひと目で伝わる</h3><p>木製キャラ、バトルステージ、エフェクトを大きく見せ、ゲームの価値を言葉より先に伝えます。</p></div>
+<p class="eyebrow">Battle Mood</p>
+<h2>見た瞬間に、遊び方が伝わる。</h2>
+<div class="mini"><h3>キャラで笑える</h3><p>木製キャラや不思議な相手が、ゆるくて勢いのあるバトルを作ります。</p></div>
+<div class="mini"><h3>テンポよく遊べる</h3><p>長く構えなくても、短い時間で勝負の変化を楽しめます。</p></div>
+<div class="mini"><h3>次を試したくなる</h3><p>キャラごとの違いや解放要素で、もう一戦だけ遊びたくなる流れを目指しています。</p></div>
 </div>
 </div>
 </section>
 
 <section class="section dark">
 <div class="inner">
-<p class="eyebrow">MemeClash Links</p>
-<h2>審査・サポート用URL</h2>
-<p class="section-lead">App Store Connectに入力する公式ページです。リンク名は用途が分かるように分けています。</p>
+<p class="eyebrow">Support</p>
+<h2>安心して遊ぶためのページ</h2>
+<p class="section-lead">データの扱い、利用条件、困った時の連絡先をまとめています。</p>
 <div class="legal-grid">
 <a class="legal-card" href="/memeclash/privacy-policy.html"><h3>MemeClash プライバシーポリシー</h3><p>広告、Unity、データの扱いに関する案内。</p></a>
 <a class="legal-card" href="/memeclash/terms-of-use.html"><h3>MemeClash 利用規約</h3><p>利用条件、免責事項、広告表示について。</p></a>
 <a class="legal-card" href="/memeclash/support.html"><h3>MemeClash サポートページ</h3><p>FAQと不具合報告フォームへの導線。</p></a>
 </div>
-<p class="notice">App Store公開後、このページにダウンロードリンクを追加します。</p>
+<p class="notice">公開準備中です。最新情報はWasabiBeans SNSリンク集で案内します。</p>
 </div>
 </section>
 </main>
