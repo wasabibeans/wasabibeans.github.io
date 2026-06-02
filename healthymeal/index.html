@@ -4,39 +4,80 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>HealthyMeal 公式サイト</title>
-<meta name="description" content="HealthyMeal - AI健康献立と初心者筋トレ管理 の公式サイト。献立、栄養、筋トレ、水分、ヘルスケア連携をまとめるiOSアプリ。">
+<meta name="description" content="HealthyMeal - AI健康献立と初心者筋トレ管理 の公式サイト。食事、筋トレ、水分、ヘルスケア連携をまとめるiOSアプリ。">
 <style>
-*{box-sizing:border-box}body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Hiragino Kaku Gothic ProN","Noto Sans JP",sans-serif;background:#f6f7ef;color:#182314;line-height:1.75}.hero{min-height:88vh;padding:28px 22px 60px;background:linear-gradient(130deg,#f7f7ed 0%,#e4efd3 52%,#cfe5c4 100%);position:relative;overflow:hidden}.nav{max-width:1080px;margin:0 auto 46px;display:flex;justify-content:space-between;gap:16px;align-items:center}.nav a{color:#28371f;text-decoration:none;font-weight:700}.nav-links{display:flex;gap:10px;flex-wrap:wrap;justify-content:flex-end}.nav-links a{font-size:13px;border:1px solid rgba(40,55,31,.16);border-radius:999px;padding:8px 12px;background:rgba(255,255,255,.45)}.grid{max-width:1080px;margin:0 auto;display:grid;grid-template-columns:1.05fr .75fr;gap:46px;align-items:center}.eyebrow{font-size:13px;color:#537034;font-weight:900;letter-spacing:.08em;text-transform:uppercase}.name{font-size:clamp(38px,6vw,72px);line-height:1.04;margin:12px 0}.subtitle{font-size:clamp(18px,2.5vw,26px);font-weight:800;color:#314629;margin:0 0 18px}.lead{font-size:17px;color:#53604d;max-width:660px}.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}.btn{display:inline-flex;text-decoration:none;border-radius:999px;padding:12px 17px;border:1px solid rgba(30,48,24,.18);font-weight:800;color:#213019;background:#fff}.btn.primary{background:#26391f;color:#f8faef}.phone{width:min(340px,90%);margin:auto;border-radius:34px;background:#101b13;padding:16px;box-shadow:0 30px 80px rgba(39,65,35,.28);transform:rotate(2deg)}.screen{border-radius:24px;background:#f9fbf3;padding:20px;color:#1b2518;min-height:560px}.screen h2{font-size:22px;margin:0 0 14px}.metric{background:#eaf4d7;border-radius:16px;padding:16px;margin-bottom:12px}.metric b{display:block;font-size:25px}.meal{border:1px solid #d8e5c4;border-radius:14px;padding:14px;margin:10px 0}.section{padding:70px 22px}.inner{max-width:1080px;margin:0 auto}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{background:#fff;border:1px solid #e1e8d8;border-radius:8px;padding:22px;box-shadow:0 12px 30px rgba(35,55,31,.05);text-decoration:none;color:inherit}.card h3{margin:0 0 8px;font-size:18px}.card p{margin:0;color:#5c6857}.legal{background:#111a12;color:#edf5e6}.legal a{color:#edf5e6}.legal .cards .card{background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.12);box-shadow:none;color:#edf5e6}.legal .card p{color:#bdcab5}.footer{padding:30px 22px;background:#0b110c;color:#b9c4b3;text-align:center;font-size:12px}@media(max-width:820px){.grid,.cards{grid-template-columns:1fr}.hero{min-height:0}.phone{transform:none}.screen{min-height:auto}.nav{align-items:flex-start}}
+*{box-sizing:border-box}
+:root{--ink:#142015;--muted:#5a6655;--green:#2fcf69;--deep:#0f2719;--cream:#f7f8ef;--line:#dfe8d8;--orange:#ff8a2a;--blue:#16aee5}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Hiragino Kaku Gothic ProN","Noto Sans JP",sans-serif;background:var(--cream);color:var(--ink);line-height:1.75}
+a{color:inherit}
+.hero{min-height:92vh;padding:28px 22px 70px;background:linear-gradient(135deg,#fbfbf2 0%,#eaf4df 48%,#d6efde 100%);position:relative;overflow:hidden}
+.hero:after{content:"";position:absolute;inset:auto -12% -34% 42%;height:54%;background:radial-gradient(circle,rgba(47,207,105,.22),rgba(47,207,105,0) 68%);pointer-events:none}
+.nav{max-width:1140px;margin:0 auto 46px;display:flex;justify-content:space-between;gap:16px;align-items:center;position:relative;z-index:1}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;font-weight:900}
+.brand img{width:34px;height:34px;border-radius:9px;object-fit:cover}
+.nav-links{display:flex;gap:10px;flex-wrap:wrap;justify-content:flex-end}
+.nav-links a{font-size:13px;text-decoration:none;border:1px solid rgba(40,55,31,.16);border-radius:999px;padding:8px 12px;background:rgba(255,255,255,.62);font-weight:760}
+.hero-grid{max-width:1140px;margin:0 auto;display:grid;grid-template-columns:minmax(0,1fr) minmax(340px,520px);gap:46px;align-items:center;position:relative;z-index:1}
+.eyebrow{font-size:12px;color:#537034;font-weight:900;letter-spacing:.08em;text-transform:uppercase;margin:0 0 12px}
+.name{font-size:clamp(38px,6vw,76px);line-height:1.04;margin:0 0 12px;letter-spacing:0;overflow-wrap:anywhere;word-break:break-all;line-break:anywhere}
+.subtitle{font-size:clamp(18px,2.5vw,27px);font-weight:900;color:#263b23;margin:0 0 18px;overflow-wrap:anywhere;word-break:break-all;line-break:anywhere}
+.lead{font-size:17px;color:var(--muted);max-width:660px;margin:0;overflow-wrap:anywhere;word-break:break-all;line-break:anywhere}
+.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+.btn{display:inline-flex;align-items:center;justify-content:center;text-decoration:none;border-radius:999px;padding:12px 17px;border:1px solid rgba(30,48,24,.18);font-weight:850;color:#213019;background:#fff;min-height:46px;overflow-wrap:anywhere}
+.btn.primary{background:var(--deep);color:#f8faef;border-color:var(--deep)}
+.hero-media{display:grid;grid-template-columns:1fr 1fr;gap:14px;align-items:center}
+.hero-shot{border-radius:24px;box-shadow:0 24px 70px rgba(34,75,41,.18);width:100%;background:#fff}
+.hero-shot:first-child{transform:translateY(22px)}
+.hero-shot:nth-child(2){transform:translateY(-10px)}
+.value-strip{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:34px;max-width:720px}
+.value{border:1px solid rgba(30,48,24,.12);background:rgba(255,255,255,.62);border-radius:8px;padding:14px}
+.value b{display:block;font-size:15px;margin-bottom:2px}.value span{display:block;color:var(--muted);font-size:13px}
+.section{padding:78px 22px}
+.inner{max-width:1140px;margin:0 auto}
+.section h2{font-size:clamp(28px,4vw,46px);line-height:1.18;margin:0 0 16px;letter-spacing:0}.section-lead{max-width:720px;color:var(--muted);margin:0 0 30px}
+.shots{display:grid;grid-template-columns:repeat(5,minmax(150px,1fr));gap:14px;align-items:start}
+.shot-card{margin:0;background:#fff;border:1px solid var(--line);border-radius:8px;overflow:hidden;box-shadow:0 15px 42px rgba(35,55,31,.08)}
+.shot-card img{display:block;width:100%;height:auto}.shot-card figcaption{font-weight:850;font-size:13px;padding:12px 12px 14px;color:#263b23}
+.video-panel{display:grid;grid-template-columns:minmax(0,.95fr) minmax(300px,1.05fr);gap:34px;align-items:center}
+.preview-video{width:100%;border-radius:24px;background:#111;box-shadow:0 24px 70px rgba(23,42,26,.24)}
+.feature-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.feature{background:#fff;border:1px solid var(--line);border-radius:8px;padding:22px;box-shadow:0 12px 30px rgba(35,55,31,.05)}
+.feature h3{margin:0 0 8px;font-size:18px}.feature p{margin:0;color:var(--muted)}
+.feature.accent-one{border-top:4px solid var(--green)}.feature.accent-two{border-top:4px solid var(--orange)}.feature.accent-three{border-top:4px solid var(--blue)}
+.legal{background:#111a12;color:#edf5e6}.legal .eyebrow{color:#bfe47d}.legal .section-lead{color:#bdcab5}.legal-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.legal-card{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:8px;padding:22px;text-decoration:none;color:#edf5e6}.legal-card h3{margin:0 0 8px}.legal-card p{margin:0;color:#bdcab5}
+.footer{padding:30px 22px;background:#0b110c;color:#b9c4b3;text-align:center;font-size:12px}
+@media(max-width:900px){.hero-grid,.video-panel{grid-template-columns:1fr}.hero{min-height:0}.hero-media{max-width:560px}.shots{grid-template-columns:repeat(2,minmax(0,1fr))}.feature-grid,.legal-grid,.value-strip{grid-template-columns:1fr}.hero-shot:first-child,.hero-shot:nth-child(2){transform:none}}
+@media(max-width:520px){body{overflow-x:hidden}.nav{align-items:flex-start;flex-direction:column}.nav-links{display:grid;grid-template-columns:1fr;width:100%;justify-content:stretch}.nav-links a{font-size:12px;text-align:center;white-space:normal}.name,.subtitle,.lead{width:100%;max-width:330px}.hero-media{grid-template-columns:1fr 1fr;gap:10px}.shots{grid-template-columns:1fr}.name{font-size:40px}.section{padding:58px 18px}.hero{padding-left:18px;padding-right:18px}.btn{width:100%}}
 </style>
 </head>
 <body>
 <header class="hero">
 <nav class="nav">
-<a href="/healthymeal/">HealthyMeal 公式サイト</a>
+<a class="brand" href="/healthymeal/"><img src="/assets/healthymeal-app-icon.png" alt="HealthyMealアプリアイコン">HealthyMeal 公式サイト</a>
 <div class="nav-links">
 <a href="/">WasabiBeans 開発者ホームページ</a>
 <a href="/links/">WasabiBeans SNSリンク集</a>
 </div>
 </nav>
-<div class="grid">
+<div class="hero-grid">
 <div>
-<div class="eyebrow">iOS App</div>
+<p class="eyebrow">iOS App</p>
 <h1 class="name">HealthyMeal</h1>
 <p class="subtitle">AI健康献立と初心者筋トレ管理</p>
-<p class="lead">食事、筋トレ、水分、ヘルスケア連携をひとつにまとめるiPhoneアプリです。献立の考えすぎを減らし、今日やることを見える形に整えます。</p>
+<p class="lead">食事を決める、体を動かす、記録する。毎日の健康管理で迷いやすいところを、ひとつのアプリで見える形に整えます。</p>
 <div class="actions">
 <a class="btn primary" href="https://apps.apple.com/app/id6769673379">HealthyMeal App Storeページ</a>
 <a class="btn" href="/healthymeal/support.html">HealthyMeal サポートページ</a>
 </div>
+<div class="value-strip" aria-label="HealthyMealの価値">
+<div class="value"><b>食事が決まる</b><span>体に合わせた献立提案</span></div>
+<div class="value"><b>運動が始めやすい</b><span>初心者向け筋トレ管理</span></div>
+<div class="value"><b>記録が続く</b><span>水分・体重・買い物まで整理</span></div>
 </div>
-<div class="phone" aria-label="HealthyMealの画面イメージ">
-<div class="screen">
-<h2>今日のプラン</h2>
-<div class="metric"><span>目標カロリー</span><b>1,850 kcal</b></div>
-<div class="meal"><strong>朝食</strong><br>たんぱく質を意識した軽めの献立</div>
-<div class="meal"><strong>筋トレ</strong><br>初心者向け全身メニュー 18分</div>
-<div class="meal"><strong>水分</strong><br>今日の目標まであと 600ml</div>
 </div>
+<div class="hero-media" aria-label="HealthyMealのApp Store掲載画像">
+<img class="hero-shot" src="/assets/healthymeal-appstore-01.png" alt="HealthyMealの献立提案画面">
+<img class="hero-shot" src="/assets/healthymeal-appstore-02.png" alt="HealthyMealの筋トレ管理画面">
 </div>
 </div>
 </header>
@@ -44,23 +85,44 @@
 <main>
 <section class="section">
 <div class="inner">
-<p class="eyebrow">Features</p>
-<h2>毎日の健康管理を、続けやすい単位に分ける。</h2>
-<div class="cards">
-<div class="card"><h3>献立提案</h3><p>目的や栄養バランスに合わせ、食事の候補を整理します。</p></div>
-<div class="card"><h3>初心者筋トレ</h3><p>無理のないメニューで、運動習慣の入口を作ります。</p></div>
-<div class="card"><h3>ヘルスケア連携</h3><p>体重や歩数などの健康データとあわせて確認できます。</p></div>
+<p class="eyebrow">App Store Preview</p>
+<h2>アプリの価値を、画面で一目で伝える。</h2>
+<p class="section-lead">App Store掲載用の宣伝画像をそのまま活かし、献立、筋トレ、記録、買い物、プロフィールまでの流れを見えるようにしました。</p>
+<div class="shots">
+<figure class="shot-card"><img src="/assets/healthymeal-appstore-01.png" alt="食事が決まる宣伝画像"><figcaption>食事が決まる</figcaption></figure>
+<figure class="shot-card"><img src="/assets/healthymeal-appstore-02.png" alt="筋トレが続く宣伝画像"><figcaption>筋トレが続く</figcaption></figure>
+<figure class="shot-card"><img src="/assets/healthymeal-appstore-03.png" alt="毎日を記録できる宣伝画像"><figcaption>毎日を記録</figcaption></figure>
+<figure class="shot-card"><img src="/assets/healthymeal-appstore-04.png" alt="買い物リストの宣伝画像"><figcaption>買い物も整理</figcaption></figure>
+<figure class="shot-card"><img src="/assets/healthymeal-appstore-05.png" alt="プロフィール管理の宣伝画像"><figcaption>目標を管理</figcaption></figure>
 </div>
 </div>
 </section>
+
+<section class="section">
+<div class="inner video-panel">
+<div>
+<p class="eyebrow">Preview Video</p>
+<h2>短い動画でも、できることが伝わる。</h2>
+<p class="section-lead">献立提案から筋トレ、記録までの体験を、App Store提出用プレビュー動画で確認できます。</p>
+<div class="feature-grid">
+<div class="feature accent-one"><h3>AI献立提案</h3><p>今日の食事を決める時間を減らし、栄養の見通しを立てやすくします。</p></div>
+<div class="feature accent-two"><h3>初心者筋トレ</h3><p>いきなり難しいメニューにせず、続けやすい運動の入口を作ります。</p></div>
+<div class="feature accent-three"><h3>記録と買い物</h3><p>水分、体重、買い物リストをまとめ、毎日の健康管理を軽くします。</p></div>
+</div>
+</div>
+<video class="preview-video" src="/assets/healthymeal-preview.mp4" controls muted playsinline preload="metadata" poster="/assets/healthymeal-appstore-01.png"></video>
+</div>
+</section>
+
 <section class="section legal">
 <div class="inner">
 <p class="eyebrow">HealthyMeal Links</p>
 <h2>審査・サポート用URL</h2>
-<div class="cards">
-<a class="card" href="/healthymeal/privacy-policy.html"><h3>HealthyMeal プライバシーポリシー</h3><p>データの扱い、第三者サービス、ユーザーの権利。</p></a>
-<a class="card" href="/healthymeal/terms-of-use.html"><h3>HealthyMeal 利用規約</h3><p>利用条件、免責事項、サブスクリプション。</p></a>
-<a class="card" href="/healthymeal/support.html"><h3>HealthyMeal サポートページ</h3><p>FAQと不具合報告フォームへの導線。</p></a>
+<p class="section-lead">App Store Connectに入力する公式ページです。リンク名は用途が分かるように分けています。</p>
+<div class="legal-grid">
+<a class="legal-card" href="/healthymeal/privacy-policy.html"><h3>HealthyMeal プライバシーポリシー</h3><p>データの扱い、第三者サービス、ユーザーの権利。</p></a>
+<a class="legal-card" href="/healthymeal/terms-of-use.html"><h3>HealthyMeal 利用規約</h3><p>利用条件、免責事項、サブスクリプション。</p></a>
+<a class="legal-card" href="/healthymeal/support.html"><h3>HealthyMeal サポートページ</h3><p>FAQと不具合報告フォームへの導線。</p></a>
 </div>
 </div>
 </section>
