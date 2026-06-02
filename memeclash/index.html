@@ -11,7 +11,7 @@
 body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Hiragino Kaku Gothic ProN","Noto Sans JP",sans-serif;background:#11131a;color:#191b1f;line-height:1.75}
 a{color:inherit}
 .hero{min-height:92vh;position:relative;overflow:hidden;color:var(--ink);background:#090b10}
-.hero:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(6,8,12,.92) 0%,rgba(6,8,12,.78) 34%,rgba(6,8,12,.28) 72%,rgba(6,8,12,.14) 100%),url("/assets/memeclash-hero.png") center/cover no-repeat;transform:scale(1.01)}
+.hero:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(6,8,12,.92) 0%,rgba(6,8,12,.78) 34%,rgba(6,8,12,.28) 72%,rgba(6,8,12,.14) 100%),url("../assets/memeclash-hero.png") center/cover no-repeat;transform:scale(1.01)}
 .hero:after{content:"";position:absolute;inset:auto 0 0;height:26%;background:linear-gradient(0deg,#11131a,rgba(17,19,26,0));pointer-events:none}
 .nav{max-width:1140px;margin:0 auto;padding:28px 22px 36px;display:flex;justify-content:space-between;gap:16px;align-items:center;position:relative;z-index:1}
 .brand{display:flex;align-items:center;gap:10px;text-decoration:none;font-weight:900}
@@ -28,17 +28,17 @@ h1{font-size:clamp(44px,7vw,86px);line-height:1;margin:0 0 14px;letter-spacing:0
 .visual-grid{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(280px,.85fr);gap:28px;align-items:center}.visual{margin:0;border-radius:18px;overflow:hidden;border:1px solid rgba(255,255,255,.12);background:#0b0d12;box-shadow:0 24px 80px rgba(0,0,0,.28)}.visual img{display:block;width:100%;height:auto}.stack{display:grid;gap:16px}.mini{border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.06);border-radius:8px;padding:20px}.mini h3{margin:0 0 8px}.mini p{margin:0;color:#c4c1b7}
 .legal-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.legal-card{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:8px;padding:22px;text-decoration:none;color:#edf5e6}.legal-card h3{margin:0 0 8px}.legal-card p{margin:0;color:#bdcab5}
 .notice{color:#c4c1b7;font-size:13px;margin:24px 0 0}.footer{padding:30px 22px;background:#090b10;color:#b9c4b3;text-align:center;font-size:12px}
-@media(max-width:900px){.hero-inner,.visual-grid{grid-template-columns:1fr}.hero-icon{display:none}.feature-grid,.legal-grid,.value-strip{grid-template-columns:1fr}.hero{min-height:0}.hero:before{background:linear-gradient(180deg,rgba(6,8,12,.92) 0%,rgba(6,8,12,.76) 54%,rgba(6,8,12,.5) 100%),url("/assets/memeclash-hero.png") center/cover no-repeat}.nav{align-items:flex-start}}
+@media(max-width:900px){.hero-inner,.visual-grid{grid-template-columns:1fr}.hero-icon{display:none}.feature-grid,.legal-grid,.value-strip{grid-template-columns:1fr}.hero{min-height:0}.hero:before{background:linear-gradient(180deg,rgba(6,8,12,.92) 0%,rgba(6,8,12,.76) 54%,rgba(6,8,12,.5) 100%),url("../assets/memeclash-hero.png") center/cover no-repeat}.nav{align-items:flex-start}}
 @media(max-width:520px){body{overflow-x:hidden}.hero-inner{padding:36px 18px 70px}.nav{padding-left:18px;padding-right:18px;flex-direction:column}.nav-links{display:grid;grid-template-columns:1fr;width:100%;justify-content:stretch}.nav-links a{font-size:12px;text-align:center;white-space:normal}h1,.subtitle,.lead{width:100%;max-width:330px}.btn{width:100%}.section{padding:58px 18px}h1{font-size:46px}}
 </style>
 </head>
 <body>
 <header class="hero">
 <nav class="nav">
-<a class="brand" href="/memeclash/"><img src="/assets/memeclash-app-icon.png" alt="MemeClashアプリアイコン">MemeClash 公式サイト</a>
+<a class="brand" href="index.html"><img src="../assets/memeclash-app-icon.png" alt="MemeClashアプリアイコン">MemeClash 公式サイト</a>
 <div class="nav-links">
-<a href="/">WasabiBeans 開発者ホームページ</a>
-<a href="/links/">WasabiBeans SNSリンク集</a>
+<a href="../index.html">WasabiBeans 開発者ホームページ</a>
+<a href="../links/index.html">WasabiBeans SNSリンク集</a>
 </div>
 </nav>
 <div class="hero-inner">
@@ -48,8 +48,8 @@ h1{font-size:clamp(44px,7vw,86px);line-height:1;margin:0 0 14px;letter-spacing:0
 <p class="subtitle">クセの強いキャラで、テンポよく戦う。</p>
 <p class="lead">ミームキャラクターたちが、属性、確率、必殺技でぶつかり合うカジュアル3Dバトルゲーム。短時間でも勝負が動く、軽く遊べるiPhone向けゲームです。</p>
 <div class="actions">
-<a class="btn primary" href="/memeclash/support.html">サポートを見る</a>
-<a class="btn" href="/memeclash/privacy-policy.html">プライバシーを確認</a>
+<a class="btn primary" href="support.html">サポートを見る</a>
+<a class="btn" href="privacy-policy.html">プライバシーを確認</a>
 </div>
 <div class="value-strip" aria-label="MemeClashの価値">
 <div class="value"><b>すぐ戦える</b><span>直感的なコマンド選択</span></div>
@@ -57,7 +57,7 @@ h1{font-size:clamp(44px,7vw,86px);line-height:1;margin:0 0 14px;letter-spacing:0
 <div class="value"><b>集めたくなる</b><span>個性あるキャラを解放</span></div>
 </div>
 </div>
-<img class="hero-icon" src="/assets/memeclash-app-icon.png" alt="MemeClashアプリアイコン">
+<img class="hero-icon" src="../assets/memeclash-app-icon.png" alt="MemeClashアプリアイコン">
 </div>
 </header>
 
@@ -78,7 +78,7 @@ h1{font-size:clamp(44px,7vw,86px);line-height:1;margin:0 0 14px;letter-spacing:0
 <section class="section dark">
 <div class="inner visual-grid">
 <figure class="visual">
-<img src="/assets/memeclash-hero.png" alt="MemeClashの3Dバトルを表すキービジュアル">
+<img src="../assets/memeclash-hero.png" alt="MemeClashの3Dバトルを表すキービジュアル">
 </figure>
 <div class="stack">
 <p class="eyebrow">Battle Mood</p>
@@ -96,9 +96,9 @@ h1{font-size:clamp(44px,7vw,86px);line-height:1;margin:0 0 14px;letter-spacing:0
 <h2>安心して遊ぶためのページ</h2>
 <p class="section-lead">データの扱い、利用条件、困った時の連絡先をまとめています。</p>
 <div class="legal-grid">
-<a class="legal-card" href="/memeclash/privacy-policy.html"><h3>MemeClash プライバシーポリシー</h3><p>広告、Unity、データの扱いに関する案内。</p></a>
-<a class="legal-card" href="/memeclash/terms-of-use.html"><h3>MemeClash 利用規約</h3><p>利用条件、免責事項、広告表示について。</p></a>
-<a class="legal-card" href="/memeclash/support.html"><h3>MemeClash サポートページ</h3><p>FAQと不具合報告フォームへの導線。</p></a>
+<a class="legal-card" href="privacy-policy.html"><h3>MemeClash プライバシーポリシー</h3><p>広告、Unity、データの扱いに関する案内。</p></a>
+<a class="legal-card" href="terms-of-use.html"><h3>MemeClash 利用規約</h3><p>利用条件、免責事項、広告表示について。</p></a>
+<a class="legal-card" href="support.html"><h3>MemeClash サポートページ</h3><p>FAQと不具合報告フォームへの導線。</p></a>
 </div>
 <p class="notice">公開準備中です。最新情報はWasabiBeans SNSリンク集で案内します。</p>
 </div>
