@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>FishLog 公式サイト</title>
-<meta name="description" content="FishLogは、魚種、サイズ、写真、場所、天候をまとめて残せるiPhone向け釣果記録アプリです。">
+<meta name="description" content="FishLogは、魚種、サイズ、写真、場所、天候をまとめて残せるiPhone・iPad向け釣果記録アプリです。">
 <style>
 *{box-sizing:border-box}
 :root{--bg:#07131d;--ink:#f5fbff;--muted:#c5d4df;--line:rgba(255,255,255,.14);--blue:#1a365d;--aqua:#46c6dc;--orange:#f97316;--paper:#f4fbff;--text:#122031}
@@ -15,8 +15,9 @@ a{color:inherit}.hero{min-height:92vh;position:relative;overflow:hidden;color:va
 .hero-inner{max-width:1120px;margin:0 auto;padding:58px 22px 110px;position:relative;z-index:1;display:grid;grid-template-columns:minmax(0,640px) minmax(250px,340px);gap:42px;align-items:center}.eyebrow{font-size:12px;color:#a7f3ff;font-weight:900;letter-spacing:.08em;text-transform:uppercase;margin:0 0 12px}h1{font-size:clamp(46px,7vw,88px);line-height:1;margin:0 0 14px;letter-spacing:0;overflow-wrap:anywhere}.subtitle{font-size:clamp(18px,2.6vw,28px);font-weight:900;margin:0 0 18px;color:#fff6df}.lead{font-size:17px;color:var(--muted);max-width:650px;margin:0}.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}.btn{display:inline-flex;align-items:center;justify-content:center;text-decoration:none;border-radius:999px;padding:12px 17px;border:1px solid var(--line);font-weight:850;color:var(--ink);background:rgba(255,255,255,.1);min-height:46px}.btn.primary{background:var(--orange);color:#fff;border-color:var(--orange)}.hero-icon{width:min(292px,78vw);margin:auto;border-radius:30px;box-shadow:0 28px 90px rgba(0,0,0,.38);transform:rotate(2deg)}
 .value-strip{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:34px;max-width:720px}.value{border:1px solid var(--line);background:rgba(255,255,255,.09);border-radius:8px;padding:14px;backdrop-filter:blur(8px)}.value b{display:block;font-size:15px;color:#fff}.value span{display:block;color:#d2e1ea;font-size:13px}
 .section{padding:78px 22px;background:var(--paper)}.section.dark{background:#07131d;color:var(--ink)}.inner{max-width:1120px;margin:0 auto}.section h2{font-size:clamp(28px,4vw,46px);line-height:1.18;margin:0 0 16px}.section-lead{max-width:740px;color:#5e7180;margin:0 0 30px}.dark .section-lead{color:#c5d4df}.feature-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.feature{background:#fff;border:1px solid rgba(18,32,49,.1);border-radius:8px;padding:22px;box-shadow:0 14px 40px rgba(15,62,96,.08)}.feature h3{margin:0 0 8px;font-size:18px}.feature p{margin:0;color:#5e7180}.feature.blue{border-top:4px solid var(--blue)}.feature.aqua{border-top:4px solid var(--aqua)}.feature.orange{border-top:4px solid var(--orange)}
+.screenshot-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;margin-top:28px}.screenshot{background:#fff;border:1px solid rgba(18,32,49,.1);border-radius:8px;overflow:hidden;box-shadow:0 14px 40px rgba(15,62,96,.08)}.screenshot img{display:block;width:100%;height:auto}.screenshot span{display:block;padding:12px 12px 14px;font-weight:850;color:#173a5e;font-size:13px}
 .legal-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.legal-card{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:8px;padding:22px;text-decoration:none;color:#edf8ff}.legal-card h3{margin:0 0 8px}.legal-card p{margin:0;color:#bfd1de}.notice{color:#bfd1de;font-size:13px;margin:24px 0 0}.footer{padding:30px 22px;background:#040c12;color:#aec3d1;text-align:center;font-size:12px}
-@media(max-width:860px){.hero-inner{grid-template-columns:1fr}.hero-icon{display:none}.feature-grid,.legal-grid,.value-strip{grid-template-columns:1fr}.hero{min-height:0}.nav{align-items:flex-start;flex-direction:column}.nav-links{display:grid;grid-template-columns:1fr;width:100%}.nav-links a{text-align:center}.btn{width:100%}.section{padding:58px 18px}}
+@media(max-width:860px){.hero-inner{grid-template-columns:1fr}.hero-icon{display:none}.feature-grid,.legal-grid,.value-strip,.screenshot-grid{grid-template-columns:1fr}.hero{min-height:0}.nav{align-items:flex-start;flex-direction:column}.nav-links{display:grid;grid-template-columns:1fr;width:100%}.nav-links a{text-align:center}.btn{width:100%}.section{padding:58px 18px}}
 </style>
 </head>
 <body>
@@ -33,7 +34,7 @@ a{color:inherit}.hero{min-height:92vh;position:relative;overflow:hidden;color:va
 <p class="eyebrow">Fishing Log App</p>
 <h1>FishLog</h1>
 <p class="subtitle">釣果を、写真と場所で残す。</p>
-<p class="lead">FishLogは、魚種、サイズ、重さ、天候、メモ、写真、釣った場所をまとめて記録できるiPhone向け釣果ログアプリです。釣行の思い出と次の一匹のヒントを、端末内にすっきり残せます。</p>
+<p class="lead">FishLogは、魚種、サイズ、重さ、天候、メモ、写真、釣った場所をまとめて記録できるiPhone・iPad向け釣果ログアプリです。釣行の思い出と次の一匹のヒントを、端末内にすっきり残せます。</p>
 <div class="actions">
 <a class="btn primary" href="support.html">サポートを見る</a>
 <a class="btn" href="privacy-policy.html">プライバシーを確認</a>
@@ -60,6 +61,20 @@ a{color:inherit}.hero{min-height:92vh;position:relative;overflow:hidden;color:va
 </div>
 </div>
 </section>
+<section class="section">
+<div class="inner">
+<p class="eyebrow">Screens</p>
+<h2>釣果を記録して、あとから見返しやすく。</h2>
+<p class="section-lead">一覧、写真付き記録、統計、マップ、CSV出力まで、釣行の記憶を整理しやすい画面にまとめています。</p>
+<div class="screenshot-grid" aria-label="FishLogの画面例">
+<div class="screenshot"><img src="../assets/fishlog-appstore-01.png" alt="釣果一覧の画面例"><span>釣果をすばやく記録</span></div>
+<div class="screenshot"><img src="../assets/fishlog-appstore-02.png" alt="新規記録の画面例"><span>写真と場所も一緒に</span></div>
+<div class="screenshot"><img src="../assets/fishlog-appstore-03.png" alt="統計の画面例"><span>釣果の傾向を確認</span></div>
+<div class="screenshot"><img src="../assets/fishlog-appstore-04.png" alt="マップの画面例"><span>釣った場所を見返す</span></div>
+<div class="screenshot"><img src="../assets/fishlog-appstore-05.png" alt="CSV出力の画面例"><span>ProでCSV書き出し</span></div>
+</div>
+</div>
+</section>
 <section class="section dark">
 <div class="inner">
 <p class="eyebrow">Privacy First</p>
@@ -74,6 +89,6 @@ a{color:inherit}.hero{min-height:92vh;position:relative;overflow:hidden;color:va
 </div>
 </section>
 </main>
-<footer class="footer">最終更新日: 2026年6月4日<br>© 2026 WasabiBeans. All rights reserved.</footer>
+<footer class="footer">最終更新日: 2026年6月5日<br>© 2026 WasabiBeans. All rights reserved.</footer>
 </body>
 </html>
