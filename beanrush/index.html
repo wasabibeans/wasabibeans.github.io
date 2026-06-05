@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bean Rush | WasabiBeans</title>
+  <meta name="description" content="Bean Rushは、豆を滑らせてスパイスを集め、鍋を目指す2Dスライドパズルゲームです。">
+  <style>
+    :root { color-scheme: light dark; --bg:#fff7eb; --ink:#24140d; --muted:#6e5346; --card:#ffffffd9; --accent:#d85b23; --line:#ead4bf; }
+    @media (prefers-color-scheme: dark) { :root { --bg:#19100b; --ink:#fff4e7; --muted:#d7bda9; --card:#2b1b12d9; --line:#5a3724; } }
+    * { box-sizing: border-box; }
+    body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; background:var(--bg); color:var(--ink); line-height:1.7; }
+    a { color:var(--accent); }
+    .hero { min-height:86vh; display:grid; align-items:end; padding:clamp(28px,6vw,72px); background:linear-gradient(180deg,rgba(34,17,8,.25),rgba(34,17,8,.72)), url("../assets/beanrush-hero.jpg"); background-size:cover; background-position:center; }
+    .hero-inner { max-width:760px; color:white; text-shadow:0 3px 16px rgba(0,0,0,.45); }
+    h1 { margin:0 0 12px; font-size:clamp(48px,12vw,96px); line-height:.95; letter-spacing:0; }
+    .lead { margin:0 0 26px; font-size:clamp(18px,3vw,24px); max-width:620px; }
+    .badge { display:inline-flex; align-items:center; border:1px solid rgba(255,255,255,.6); border-radius:8px; padding:10px 14px; color:white; text-decoration:none; font-weight:700; background:rgba(0,0,0,.24); }
+    main { max-width:1040px; margin:0 auto; padding:48px 20px 64px; }
+    .grid { display:grid; gap:18px; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); }
+    .card { background:var(--card); border:1px solid var(--line); border-radius:8px; padding:22px; }
+    h2 { font-size:28px; margin:0 0 16px; }
+    h3 { margin:0 0 8px; }
+    p { color:var(--muted); }
+    footer { border-top:1px solid var(--line); padding:28px 20px; text-align:center; color:var(--muted); }
+    footer a { margin:0 8px; }
+  </style>
+</head>
+<body>
+  <section class="hero">
+    <div class="hero-inner">
+      <h1>Bean Rush</h1>
+      <p class="lead">豆をスワイプで滑らせ、スパイスを集めて、あたたかい鍋へ飛び込むスライドパズル。</p>
+      <span class="badge">App Store release coming soon</span>
+    </div>
+  </section>
+  <main>
+    <section>
+      <h2>短く遊べて、じっくり考えられる</h2>
+      <div class="grid">
+        <article class="card"><h3>6x6のスライド盤面</h3><p>上下左右に滑る豆を止まる位置まで動かし、少ない手数でゴールを目指します。</p></article>
+        <article class="card"><h3>スパイス集め</h3><p>鍋に入る前に、盤面上のスパイスをすべて集める必要があります。</p></article>
+        <article class="card"><h3>Premium Pack</h3><p>無料の30面に加えて、買い切りのPremium Packで追加20面と豆スキンを解放できます。</p></article>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>© 2026 WasabiBeans</p>
+    <a href="privacy-policy.html">プライバシーポリシー</a>
+    <a href="support.html">サポート</a>
+    <a href="terms-of-use.html">利用規約</a>
+  </footer>
+</body>
+</html>
