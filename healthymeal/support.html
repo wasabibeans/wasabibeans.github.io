@@ -7,7 +7,7 @@
 <meta name="description" content="HealthyMealアプリのサポートページ。よくあるご質問とお問い合わせ窓口のご案内。">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 :root{--bg:#0a0e17;--surface:#131825;--surface2:#1a2035;--accent:#34d399;--accent2:#06b6d4;--text:#e2e8f0;--text-muted:#94a3b8;--border:rgba(255,255,255,0.06);--gradient:linear-gradient(135deg,#34d399,#06b6d4)}
@@ -18,6 +18,9 @@ header a{color:var(--text-muted);text-decoration:none;font-size:13px;transition:
 header a:hover{color:var(--accent)}
 h1{font-size:24px;font-weight:700;background:var(--gradient);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin:16px 0 8px}
 .intro{font-size:14px;color:var(--text-muted);line-height:1.7;margin-bottom:32px;text-align:center}
+.lang-links{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin:0 0 24px}
+.lang-links a{padding:7px 13px;background:var(--surface);border:1px solid var(--border);border-radius:999px;color:var(--text-muted);text-decoration:none;font-size:13px;transition:all 0.2s}
+.lang-links a:hover{color:var(--accent);border-color:rgba(52,211,153,0.3)}
 .faq-item{background:var(--surface);border:1px solid var(--border);border-radius:14px;margin-bottom:12px;overflow:hidden;transition:border-color 0.2s}
 .faq-item:hover{border-color:rgba(52,211,153,0.2)}
 .faq-q{padding:18px 20px;cursor:pointer;display:flex;justify-content:space-between;align-items:center;font-size:14px;font-weight:500;user-select:none;transition:background 0.2s}
@@ -53,7 +56,9 @@ footer p{font-size:12px;color:var(--text-muted)}
 <h1>HealthyMeal サポートページ</h1>
 </header>
 <p class="intro">HealthyMeal - AI健康献立と初心者筋トレ管理をご利用いただき、誠にありがとうございます。<br>アプリの使い方やトラブルシューティングにつきましては、以下のFAQをご確認ください。</p>
+<div class="lang-links"><a href="#ja">日本語</a><a href="#en">English</a></div>
 
+<section id="ja" lang="ja">
 <div class="faq-item"><div class="faq-q"><span><span class="tag">Q1.</span>アプリに入力した身体データや食事記録は、開発者や第三者に送信されますか？</span><span class="arrow">▼</span></div><div class="faq-a"><div class="faq-a-inner"><strong>いいえ、送信されません。</strong><br>本アプリはプライバシー最優先の設計となっており、お客様が入力された身体データ、体重、食事、筋トレ履歴などのデータはすべてお客様自身の端末内（ローカル）にのみ保存されます。開発者や外部のサーバーへ送信・収集されることは一切ございませんので、安心してご利用いただけます。</div></div></div>
 
 <div class="faq-item"><div class="faq-q"><span><span class="tag">Q2.</span>機種変更をする場合、データは引き継げますか？</span><span class="arrow">▼</span></div><div class="faq-a"><div class="faq-a-inner">本アプリはデータをローカルに保存しているため、一般的なサーバー移行システムはありません。<br>ただし、iPhone全体の<strong>「iCloudバックアップ」</strong>または<strong>「iTunes/Finder経由の暗号化バックアップ」</strong>を利用して新しい端末へデータを移行（復元）することで、本アプリのデータも一緒に引き継ぐことが可能です。機種変更前にiPhone全体のバックアップを必ずお取りください。</div></div></div>
@@ -62,7 +67,7 @@ footer p{font-size:12px;color:var(--text-muted)}
 
 <div class="faq-item"><div class="faq-q"><span><span class="tag">Q4.</span>筋トレメニューをやっていてケガをしてしまいました。</span><span class="arrow">▼</span></div><div class="faq-a"><div class="faq-a-inner">アプリによる自動生成や推奨メニューは一般的な推奨トレーニングであり、個々の細かな体調や運動能力、姿勢の良し悪しを完全に判定することはできません。<br>ご自身の体調に合わせて無理のないペースで実行してください。本アプリのご利用によって生じた負傷、急病、事故、器物破損等について、当開発者は一切の責任を負いかねます。</div></div></div>
 
-<div class="faq-item"><div class="faq-q"><span><span class="tag">Q5.</span>有料サブスクリプション「しばサポーター」の解約・返金をしたい。</span><span class="arrow">▼</span></div><div class="faq-a"><div class="faq-a-inner">本アプリの決済はすべてApple社のApp Store決済システムを経由して行われ、アプリ内の購入状態確認にはRevenueCatを利用する場合があります。<br>しばサポーターは自動更新サブスクリプション（<strong>月額 ¥480 / 年額 ¥3,900</strong>）として提供されます。<br><br>定期購読の解約は、iPhoneの「設定」アプリ ＞「ご自身のアカウント（一番上の名前）」＞「サブスクリプション」からHealthyMealを選択し、解約手続きを行ってください。<br><br>返金につきましては、開発者側で直接処理を行う権限がないため、Appleのサポートページ<strong>「<a href="https://reportaproblem.apple.com" style="color:var(--accent)">問題を報告する</a>」</strong>よりApple社へ直接ご請求ください。</div></div></div>
+<div class="faq-item"><div class="faq-q"><span><span class="tag">Q5.</span>有料サブスクリプション「しばサポーター」の解約・返金をしたい。</span><span class="arrow">▼</span></div><div class="faq-a"><div class="faq-a-inner">本アプリの決済はすべてApple社のApp Store決済システムを経由して行われます。<br>しばサポーターは自動更新サブスクリプション（<strong>月額 ¥480 / 年額 ¥3,900</strong>）として提供されます。<br><br>定期購読の解約は、iPhoneの「設定」アプリ ＞「ご自身のアカウント（一番上の名前）」＞「サブスクリプション」からHealthyMealを選択し、解約手続きを行ってください。<br><br>返金につきましては、開発者側で直接処理を行う権限がないため、Appleのサポートページ<strong>「<a href="https://reportaproblem.apple.com" style="color:var(--accent)">問題を報告する</a>」</strong>よりApple社へ直接ご請求ください。</div></div></div>
 
 <div class="faq-item"><div class="faq-q"><span><span class="tag">Q6.</span>有料で購入したのに、アプリが無料になっていました。補填はありますか？</span><span class="arrow">▼</span></div><div class="faq-a"><div class="faq-a-inner">有料版をご購入いただいた方（<strong>初期サポーター</strong>）には、感謝の特典として「しばサポーター」の全プレミアム機能を<strong>永久無料</strong>でご利用いただけます。<br>この特典はアプリ内で自動的に判定・適用されるため、特別な手続きは不要です。アプリを開いた際にお祝いメッセージが表示されますのでご確認ください。</div></div></div>
 
@@ -90,9 +95,51 @@ footer p{font-size:12px;color:var(--text-muted)}
 <a href="privacy-policy.html">HealthyMeal プライバシーポリシー</a>
 <a href="terms-of-use.html">HealthyMeal 利用規約</a>
 </nav>
+</section>
+
+<section id="en" lang="en">
+<p class="intro">Thank you for using HealthyMeal - AI Meal Plans and Beginner Workout Management.<br>Please check the FAQ below for app usage and troubleshooting.</p>
+
+<div class="faq-item"><div class="faq-q"><span><span class="tag">Q1.</span>Are body data or meal records entered in the app sent to the developer or third parties?</span><span class="arrow">▼</span></div><div class="faq-a"><div class="faq-a-inner"><strong>No, they are not sent.</strong><br>The app is designed with privacy first. Body data, weight, meals, workout history, and other data you enter are stored only on your own device locally. They are not sent or collected by the developer or external servers, so you can use the app with confidence.</div></div></div>
+
+<div class="faq-item"><div class="faq-q"><span><span class="tag">Q2.</span>Can I transfer my data when changing devices?</span><span class="arrow">▼</span></div><div class="faq-a"><div class="faq-a-inner">Because the app stores data locally, it does not provide a general server-based transfer system.<br>However, if you restore your new device from a full iPhone <strong>iCloud backup</strong> or an <strong>encrypted iTunes/Finder backup</strong>, the app data may be transferred together. Please make a full iPhone backup before changing devices.</div></div></div>
+
+<div class="faq-item"><div class="faq-q"><span><span class="tag">Q3.</span>Can ingredients I excluded still appear in meal plans?</span><span class="arrow">▼</span></div><div class="faq-a"><div class="faq-a-inner">The "ingredients you do not want to use" feature excludes recipes that contain the ingredients you set. However, because it checks for exact matches with ingredient names in the recipe database, similar names or processed foods may not be excluded.<br><br><strong>If you need special dietary consideration, please always check ingredients and labels yourself immediately before cooking or eating.</strong></div></div></div>
+
+<div class="faq-item"><div class="faq-q"><span><span class="tag">Q4.</span>I was injured while doing a workout menu.</span><span class="arrow">▼</span></div><div class="faq-a"><div class="faq-a-inner">Menus automatically generated or recommended by the app are general training suggestions and cannot fully judge each person's physical condition, exercise ability, or posture.<br>Please exercise at a pace that is reasonable for your condition. The developer cannot accept responsibility for injuries, sudden illness, accidents, property damage, or similar issues caused by use of the app.</div></div></div>
+
+<div class="faq-item"><div class="faq-q"><span><span class="tag">Q5.</span>I want to cancel or request a refund for the paid subscription "Shiba Supporter."</span><span class="arrow">▼</span></div><div class="faq-a"><div class="faq-a-inner">All payments in the app are processed through Apple's App Store payment system.<br>Shiba Supporter is provided as an auto-renewable subscription (<strong>¥480/month or ¥3,900/year</strong>).<br><br>To cancel the subscription, open the iPhone Settings app &gt; your account name at the top &gt; Subscriptions, select HealthyMeal, and cancel it there.<br><br>Because the developer cannot process refunds directly, please request a refund from Apple through Apple's <strong><a href="https://reportaproblem.apple.com" style="color:var(--accent)">Report a Problem</a></strong> page.</div></div></div>
+
+<div class="faq-item"><div class="faq-q"><span><span class="tag">Q6.</span>I paid for the app, but it later became free. Is there any compensation?</span><span class="arrow">▼</span></div><div class="faq-a"><div class="faq-a-inner">Users who purchased the paid version (<strong>Early Supporters</strong>) can use all Shiba Supporter premium features <strong>for free permanently</strong> as a thank-you benefit.<br>This benefit is automatically detected and applied inside the app, so no special procedure is required. Please check the celebration message shown when you open the app.</div></div></div>
+
+<div class="faq-item"><div class="faq-q"><span><span class="tag">Q7.</span>I selected "Don't Allow" for Health integration and cannot reconnect.</span><span class="arrow">▼</span></div><div class="faq-a"><div class="faq-a-inner">Due to iOS system security restrictions, the Health permission popup appears only the first time.<br><br><strong>Step A: Enable it from the Health app</strong><ol class="steps"><li>Open the Health app from the iPhone home screen</li><li>Tap the profile icon in the upper right</li><li>Tap Privacy &gt; Apps</li><li>Select HealthyMeal</li><li>Turn on all switches</li></ol><strong>Step B: Enable it from the iOS Settings app</strong><ol class="steps"><li>Open Settings &gt; Privacy &amp; Security &gt; Health</li><li>Select HealthyMeal and turn on all permission switches</li></ol></div></div></div>
+
+<div class="faq-item"><div class="faq-q"><span><span class="tag">Q8.</span>I am not receiving notifications or reminders.</span><span class="arrow">▼</span></div><div class="faq-a"><div class="faq-a-inner">First, check whether notifications are allowed in iOS Settings &gt; Notifications &gt; HealthyMeal.<br>Next, check whether each reminder (meals, hydration, workouts) is turned on in the app's My Page tab &gt; Notification Settings.<br>If notifications still do not arrive, restart your iPhone and try again.</div></div></div>
+
+<div class="faq-item"><div class="faq-q"><span><span class="tag">Q9.</span>Where can I use the SNS share card?</span><span class="arrow">▼</span></div><div class="faq-a"><div class="faq-a-inner">Tap the share button (□↑ icon) in the upper right of the Home screen to generate a card image summarizing the day's calories, PFC, water intake, streak, and Shiba dog level. You can share it directly to Instagram, X (formerly Twitter), LINE, and other apps.</div></div></div>
+
+<div class="faq-item"><div class="faq-q"><span><span class="tag">Q10.</span>What is the rewarded ad bonus?</span><span class="arrow">▼</span></div><div class="faq-a"><div class="faq-a-inner">On the free plan, you may receive a Shiba dog growth EXP bonus by voluntarily watching a rewarded ad to the end. Ads may not be available depending on loading conditions or your network environment, and premium users are not shown ads.</div></div></div>
+
+<div class="faq-item"><div class="faq-q"><span><span class="tag">Q11.</span>Which devices and OS versions are supported?</span><span class="arrow">▼</span></div><div class="faq-a"><div class="faq-a-inner">HealthyMeal supports iPhone on iOS 17.0 or later. It may be usable on iPad, but screen display and some features are based on iPhone use. Health integration and notifications may vary depending on device settings and iOS permission status.</div></div></div>
+
+<div class="faq-item"><div class="faq-q"><span><span class="tag">Q12.</span>What are BMR and TDEE?</span><span class="arrow">▼</span></div><div class="faq-a"><div class="faq-a-inner">BMR is an estimate of the calories needed to maintain basic life functions even at rest. TDEE is an estimate of total daily energy expenditure, calculated by multiplying BMR by an activity factor. HealthyMeal calculates BMR from height, weight, age, sex, and body fat percentage, then displays TDEE while accounting for activity level. It shows target calorie intake estimates below TDEE for weight loss periods and above TDEE for weight gain periods, but this is not a medical diagnosis. If you have health concerns, please consult a physician or specialist.</div></div></div>
+
+<div class="contact-card">
+<h2>Contact</h2>
+<p>If the FAQ above does not solve your issue, please send bug reports or questions through the HealthyMeal Support Form.</p>
+<a href="https://github.com/wasabibeans/wasabibeans.github.io/issues" class="contact-btn">HealthyMeal Support Form</a>
+<p class="contact-note">Available 24 hours a day. Replies may take several business days.<br>Please include your iPhone model and iOS version when contacting us so we can respond more smoothly.</p>
+</div>
+
+<nav>
+<a href="index.html">HealthyMeal Official Website</a>
+<a href="privacy-policy.html">HealthyMeal Privacy Policy</a>
+<a href="terms-of-use.html">HealthyMeal Terms of Use</a>
+</nav>
+</section>
 
 <footer>
-<p>最終更新日: 2026年6月2日<br>© 2026 WasabiBeans. All rights reserved.</p>
+<p>最終更新日: 2026年6月2日<br>Last updated: June 2, 2026<br>© 2026 WasabiBeans. All rights reserved.</p>
 </footer>
 </div>
 

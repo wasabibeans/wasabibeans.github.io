@@ -7,7 +7,7 @@
 <meta name="description" content="HealthyMealアプリのプライバシーポリシー。ユーザー情報の取り扱いについて。">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 :root{--bg:#0a0e17;--surface:#131825;--surface2:#1a2035;--accent:#34d399;--accent2:#06b6d4;--text:#e2e8f0;--text-muted:#94a3b8;--border:rgba(255,255,255,0.06);--gradient:linear-gradient(135deg,#34d399,#06b6d4)}
@@ -18,6 +18,9 @@ header a{color:var(--text-muted);text-decoration:none;font-size:13px;transition:
 header a:hover{color:var(--accent)}
 h1{font-size:24px;font-weight:700;background:var(--gradient);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin:16px 0 8px}
 .intro{font-size:14px;color:var(--text-muted);line-height:1.7;margin-bottom:32px;text-align:center}
+.lang-links{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin:0 0 24px}
+.lang-links a{padding:7px 13px;background:var(--surface);border:1px solid var(--border);border-radius:999px;color:var(--text-muted);text-decoration:none;font-size:13px;transition:all 0.2s}
+.lang-links a:hover{color:var(--accent);border-color:rgba(52,211,153,0.3)}
 .section{background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:24px;margin-bottom:16px}
 .section h2{font-size:16px;font-weight:600;color:var(--accent);margin-bottom:14px;padding-bottom:10px;border-bottom:1px solid var(--border)}
 .section p,.section li{font-size:13px;line-height:1.8;color:var(--text-muted)}
@@ -46,7 +49,9 @@ footer p{font-size:12px;color:var(--text-muted)}
 <h1>HealthyMeal プライバシーポリシー</h1>
 </header>
 <p class="intro">HealthyMeal - AI健康献立と初心者筋トレ管理（以下「本アプリ」）の開発者（以下「当開発者」）は、<br>ユーザーのプライバシー保護を極めて重要視しています。</p>
+<div class="lang-links"><a href="#ja">日本語</a><a href="#en">English</a></div>
 
+<section id="ja" lang="ja">
 <div class="section">
 <h2>第1条（個人情報の定義とローカル保存の仕組み）</h2>
 <ol>
@@ -129,9 +134,95 @@ footer p{font-size:12px;color:var(--text-muted)}
 <a href="support.html">HealthyMeal サポートページ</a>
 <a href="terms-of-use.html">HealthyMeal 利用規約</a>
 </nav>
+</section>
+
+<section id="en" lang="en">
+<div class="section">
+<h2>Article 1 (Definition of Personal Information and Local Storage Mechanism)</h2>
+<ol>
+<li>To protect user privacy as its highest priority, this app stores all data entered by users (height, weight, age, sex, body fat percentage, target weight, target body fat percentage, activity level, weight loss or weight gain period, target calorie adjustment, excluded ingredient settings, daily meal logs, water intake, training history, Shiba dog growth data, consecutive record streaks, and similar data) only in the secure local environment (UserDefaults and local files) on the iOS device owned by the user. However, only when the user explicitly permits Apple Health integration, weight and water intake data will be written to Apple Health (HealthKit). Data stored in Health is managed on the user's device under Apple's privacy policy, and the developer cannot access it.</li>
+<li>The developer does not send, collect, or store the above data entered by users in this app on any external server managed by the developer. Therefore, it is technically and physically impossible for the developer to view, hold, or manage personal data such as users' physical information or usage history.</li>
+</ol>
+</div>
+
+<div class="section">
+<h2>Article 2 (Advertising and Analytics)</h2>
+<ol>
+<li><strong>Advertising:</strong> To provide and maintain this app for free through advertising revenue, this app may use Google AdMob to display banner ads, interstitial ads, and rewarded ads. Rewarded ads are ads that grant in-app bonuses when users voluntarily watch them. Advertising providers (including Google Inc. and its partners) may automatically obtain users' device identifiers (such as IDFA), cookies, and usage data based on user consent (ATT: App Tracking Transparency permission) for purposes such as ad optimization (personalized ad delivery), delivery restrictions, and fraudulent click detection. This information is managed under the privacy policies of each advertising provider and is not directly obtained or stored by the developer. Even if ATT permission is denied, users can continue to use this app without issue.</li>
+<li><strong>Subscription management:</strong> This app may use RevenueCat to determine the purchase status, restoration, and subscription validity of the premium feature "Shiba Supporter." RevenueCat processes App Store purchase information and anonymous in-app user identifiers, and the developer uses this only to the extent necessary to confirm purchase status. Payment information such as credit card numbers is managed by Apple and is not obtained or stored by the developer.</li>
+<li><strong>Analytics:</strong> To improve the quality and performance of this app, or to detect defects (bug fixes), anonymized statistical crash reports and usage data (such as Firebase Crashlytics) may be transmitted. This data does not include any information that identifies individuals and is used only for the technical improvement of the app.</li>
+</ol>
+</div>
+
+<div class="section">
+<h2>Article 3 (Apple Health Integration)</h2>
+<ol>
+<li>This app provides integration with Apple Health (HealthKit) only when the user explicitly permits it.</li>
+<li><strong>Data read:</strong> Step count (StepCount), active energy burned (ActiveEnergyBurned)</li>
+<li><strong>Data written:</strong> Body weight (BodyMass), water intake (DietaryWater)</li>
+<li>Health data is read and written only for items that the user has explicitly permitted on the iOS permission screen.</li>
+<li>Data read by this app from Health is used only for display within the app and is not sent to any external server.</li>
+<li>To stop Health integration, disable this app's permissions from iPhone Settings &gt; Health &gt; Data Access &amp; Devices &gt; HealthyMeal.</li>
+</ol>
+</div>
+
+<div class="section">
+<h2>Article 4 (Push Notifications)</h2>
+<ol>
+<li>This app sends push notifications as meal, hydration, and workout reminders only when the user explicitly permits them.</li>
+<li>Notifications are generated locally on the user's device and are not sent through an external server.</li>
+<li>To stop notifications, turn off each notification in the My Page settings inside the app, or disable this app's notifications from iOS Settings &gt; Notifications.</li>
+</ol>
+</div>
+
+<div class="section">
+<h2>Article 5 (SNS Sharing Feature)</h2>
+<ol>
+<li>This app provides a feature that, through user operation, generates the day's record as a card image and shares it to SNS and similar services.</li>
+<li>The share card image is generated on the user's device, and no data is sent externally unless the user explicitly performs a sharing action.</li>
+<li>The handling of data on the destination SNS platform follows the privacy policy of each platform.</li>
+</ol>
+</div>
+
+<div class="section">
+<h2>Article 6 (Provision of Information to Third Parties)</h2>
+<p>As stated in Article 1, the developer does not hold user data, and therefore does not provide, sell, share, or disclose user data to any third party under any circumstances. Even if a lawful disclosure request is made under applicable laws and regulations, it is physically impossible for the developer to provide data that the developer does not hold.</p>
+</div>
+
+<div class="section">
+<h2>Article 7 (Information Security Management and Data Deletion by Users)</h2>
+<ol>
+<li>User-entered information is stored locally in the secure application area provided by the iOS system.</li>
+<li>If users wish to delete all data recorded in this app, they can delete it individually from within the app or completely uninstall (delete) this app from the iOS device, which will safely and immediately delete all data stored locally on the device.</li>
+<li>Data written to Apple Health is not automatically deleted when the app is deleted. Please delete it individually from within the Health app.</li>
+</ol>
+</div>
+
+<div class="section">
+<h2>Article 8 (Changes to This Policy)</h2>
+<p>The developer may revise this policy without prior notice due to changes in laws and regulations, additions of app features, or other reasonable reasons. The revised Privacy Policy will apply from the time it is published in this app or on the developer's website.</p>
+</div>
+
+<div class="contact-card">
+<h2>Article 9 (Use by Children Under 13)</h2>
+<p>This app is not designed primarily for children under the age of 13. Children under the age of 13 should use this app with the consent and supervision of a parent or guardian. The developer does not knowingly collect personal information from children under the age of 13.</p>
+</div>
+
+<div class="contact-card">
+<h2>Article 10 (Contact Desk)</h2>
+<p>If you have any questions or comments about this policy or the handling of user information in this app, please contact us from the link below.</p>
+<a href="https://github.com/wasabibeans/wasabibeans.github.io/issues" class="contact-btn">HealthyMeal Support Form</a>
+</div>
+
+<nav>
+<a href="index.html">HealthyMeal Official Website</a>
+<a href="support.html">HealthyMeal Support Page</a>
+<a href="terms-of-use.html">HealthyMeal Terms of Use</a>
+</nav>
+</section>
 
 <footer>
-<p>最終更新日: 2026年6月2日<br>© 2026 WasabiBeans. All rights reserved.</p>
+<p>最終更新日: 2026年6月2日<br>Last updated: June 2, 2026<br>© 2026 WasabiBeans. All rights reserved.</p>
 </footer>
 </div>
 </body>

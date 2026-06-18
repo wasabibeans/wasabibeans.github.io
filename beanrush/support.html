@@ -4,10 +4,14 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Bean Rush サポート</title>
+  <meta name="description" content="Bean Rushのサポート。FAQ、不具合報告、操作方法を案内します。">
   <style>
     :root { color-scheme: light dark; --bg:#fff7eb; --ink:#24140d; --muted:#6e5346; --card:#ffffffd9; --accent:#d85b23; --line:#ead4bf; }
     @media (prefers-color-scheme: dark) { :root { --bg:#19100b; --ink:#fff4e7; --muted:#d7bda9; --card:#2b1b12d9; --line:#5a3724; } }
     body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; background:var(--bg); color:var(--ink); line-height:1.8; }
+    .lang-switch { position:fixed; top:14px; right:14px; z-index:10; display:flex; gap:6px; }
+    .lang-switch button { font:inherit; font-size:13px; font-weight:700; cursor:pointer; border:1px solid rgba(255,255,255,.45); background:rgba(0,0,0,.4); color:#fff; border-radius:999px; padding:6px 12px; -webkit-backdrop-filter:blur(6px); backdrop-filter:blur(6px); }
+    .lang-switch button[aria-current="true"] { background:var(--accent); border-color:var(--accent); }
     main { max-width:840px; margin:0 auto; padding:40px 20px 64px; }
     a { color:var(--accent); }
     section { background:var(--card); border:1px solid var(--line); border-radius:8px; padding:22px; margin:16px 0; }
@@ -17,14 +21,85 @@
   </style>
 </head>
 <body>
+<div class="lang-switch" role="group" aria-label="Language">
+  <button type="button" data-lang-btn="ja">日本語</button>
+  <button type="button" data-lang-btn="en">English</button>
+</div>
 <main>
-  <h1>Bean Rush サポート</h1>
-  <p>最終更新日: 2026年6月12日</p>
+  <h1 data-i18n="h1">Bean Rush サポート</h1>
+  <p data-i18n="updated">最終更新日: 2026年6月12日</p>
 
-  <section><h2>不具合報告</h2><p>不具合や表示崩れを見つけた場合は、<a href="https://github.com/wasabibeans/wasabibeans.github.io/issues">Bean Rush 不具合報告フォーム</a>からお知らせください。</p></section>
-  <section><h2>FAQ</h2><ul><li>対応環境はiOS 17以降のiPhoneとiPadです。</li><li>進行状況は端末内に保存されます。</li><li>Premium Packは買い切りの追加コンテンツです。</li><li>Premium Packを購入すると、追加20面、豆スキン、広告非表示が使えます。</li><li>購入済みなのに反映されない場合は、設定画面の「購入を復元」をお試しください。</li><li>返金はAppleの「問題を報告する」ページからAppleへ申請してください。</li><li>通常プレイ中にバナー広告が表示される場合があります。リワード広告は任意で視聴する形式です。</li></ul></section>
-  <section><h2>操作方法</h2><p>豆を上下左右にスワイプして滑らせます。スパイスがある面では、すべて集めてから鍋に入るとクリアです。</p></section>
-  <p><a href="index.html">Bean Rush公式ページへ戻る</a></p>
+  <section><h2 data-i18n="s1h2">不具合報告</h2><p data-i18n-html="s1p">不具合や表示崩れを見つけた場合は、<a href="https://github.com/wasabibeans/wasabibeans.github.io/issues">Bean Rush 不具合報告フォーム</a>からお知らせください。</p></section>
+  <section><h2 data-i18n="s2h2">FAQ</h2><ul><li data-i18n="faq1">対応環境はiOS 17以降のiPhoneとiPadです。</li><li data-i18n="faq2">進行状況は端末内に保存されます。</li><li data-i18n="faq3">Premium Packは買い切りの追加コンテンツです。</li><li data-i18n="faq4">Premium Packを購入すると、追加20面、豆スキン、広告非表示が使えます。</li><li data-i18n="faq5">購入済みなのに反映されない場合は、設定画面の「購入を復元」をお試しください。</li><li data-i18n="faq6">返金はAppleの「問題を報告する」ページからAppleへ申請してください。</li><li data-i18n="faq7">通常プレイ中にバナー広告が表示される場合があります。リワード広告は任意で視聴する形式です。</li></ul></section>
+  <section><h2 data-i18n="s3h2">操作方法</h2><p data-i18n="s3p">豆を上下左右にスワイプして滑らせます。スパイスがある面では、すべて集めてから鍋に入るとクリアです。</p></section>
+  <p><a href="index.html" data-i18n="back">Bean Rush公式ページへ戻る</a></p>
 </main>
+<script>
+  var I18N = {
+    en: {
+      __title: "Bean Rush Support",
+      __desc: "Bean Rush support: FAQ, bug reports, and how to play.",
+      h1: "Bean Rush Support",
+      updated: "Last updated: June 12, 2026",
+      s1h2: "Bug reports",
+      s1p: 'If you find a bug or display glitch, please let us know through the <a href="https://github.com/wasabibeans/wasabibeans.github.io/issues">Bean Rush bug report form</a>.',
+      s2h2: "FAQ",
+      faq1: "Works on iPhone and iPad running iOS 17 or later.",
+      faq2: "Your progress is saved on your device.",
+      faq3: "The Premium Pack is one-time add-on content.",
+      faq4: "Buying the Premium Pack unlocks 20 more levels, bean skins, and ad-free play.",
+      faq5: 'If a purchase doesn\'t appear, try "Restore Purchases" on the settings screen.',
+      faq6: 'For refunds, please request through Apple\'s "Report a Problem" page.',
+      faq7: "A banner ad may appear during normal play. Rewarded ads are optional and shown only when you choose to watch them.",
+      s3h2: "How to play",
+      s3p: "Swipe to slide beans up, down, left, or right. On levels with spices, collect them all before entering the pot to clear the level.",
+      back: "Back to the Bean Rush site"
+    }
+  };
+</script>
+<script>
+  (function () {
+    var KEY = "wb_lang", DEF = "ja", SUP = ["ja", "en"], T = I18N;
+    function pick() {
+      try {
+        var u = new URLSearchParams(location.search).get("lang");
+        if (u && SUP.indexOf(u) >= 0) return u;
+        var s = localStorage.getItem(KEY);
+        if (s && SUP.indexOf(s) >= 0) return s;
+      } catch (e) {}
+      var n = (navigator.language || "").toLowerCase();
+      for (var i = 0; i < SUP.length; i++) if (n.indexOf(SUP[i]) === 0) return SUP[i];
+      return DEF;
+    }
+    var oT = document.title, mD = document.querySelector('meta[name="description"]'), oD = mD ? mD.getAttribute("content") : "";
+    function apply(l) {
+      var d = T[l] || {};
+      document.documentElement.lang = l;
+      document.querySelectorAll("[data-i18n]").forEach(function (el) {
+        if (el.dataset.ja == null) el.dataset.ja = el.textContent;
+        var k = el.getAttribute("data-i18n");
+        el.textContent = (l === DEF) ? el.dataset.ja : (d[k] != null ? d[k] : el.dataset.ja);
+      });
+      document.querySelectorAll("[data-i18n-html]").forEach(function (el) {
+        if (el.getAttribute("data-ja-html") == null) el.setAttribute("data-ja-html", el.innerHTML);
+        var k = el.getAttribute("data-i18n-html");
+        el.innerHTML = (l === DEF) ? el.getAttribute("data-ja-html") : (d[k] != null ? d[k] : el.getAttribute("data-ja-html"));
+      });
+      document.title = (l === DEF) ? oT : (d.__title || oT);
+      if (mD) mD.setAttribute("content", (l === DEF) ? oD : (d.__desc || oD));
+      document.querySelectorAll("[data-lang-btn]").forEach(function (b) {
+        b.setAttribute("aria-current", b.getAttribute("data-lang-btn") === l ? "true" : "false");
+      });
+      try { localStorage.setItem(KEY, l); } catch (e) {}
+    }
+    window.__wbSetLang = apply;
+    document.addEventListener("DOMContentLoaded", function () {
+      document.querySelectorAll("[data-lang-btn]").forEach(function (b) {
+        b.addEventListener("click", function (e) { e.preventDefault(); apply(b.getAttribute("data-lang-btn")); });
+      });
+      apply(pick());
+    });
+  })();
+</script>
 </body>
 </html>

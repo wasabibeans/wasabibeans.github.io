@@ -15,7 +15,8 @@
 body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Hiragino Kaku Gothic ProN","Noto Sans JP",sans-serif;background:#07110e;color:var(--text);line-height:1.75}
 a{color:inherit}.hero{min-height:92vh;position:relative;overflow:hidden;color:var(--ink);background:radial-gradient(circle at 78% 22%,rgba(72,211,167,.2),transparent 32%),linear-gradient(135deg,#050807 0%,#10201b 48%,#06302d 100%)}
 .hero:after{content:"";position:absolute;inset:auto 0 0;height:34%;background:linear-gradient(0deg,#f5fbf7,rgba(245,251,247,0));pointer-events:none}
-.nav{max-width:1120px;margin:0 auto;padding:28px 22px 38px;display:flex;align-items:center;justify-content:space-between;gap:16px;position:relative;z-index:1}.brand{display:flex;align-items:center;gap:10px;text-decoration:none;font-weight:900}.nav-links{display:flex;gap:10px;flex-wrap:wrap;justify-content:flex-end}.nav-links a{font-size:13px;text-decoration:none;border:1px solid var(--line);border-radius:999px;padding:8px 12px;background:rgba(255,255,255,.08);font-weight:780}
+.nav{max-width:1120px;margin:0 auto;padding:28px 22px 38px;display:flex;align-items:center;justify-content:space-between;gap:16px;position:relative;z-index:1}.brand{display:flex;align-items:center;gap:10px;text-decoration:none;font-weight:900}.nav-links{display:flex;gap:10px;flex-wrap:wrap;justify-content:flex-end;align-items:center}.nav-links a{font-size:13px;text-decoration:none;border:1px solid var(--line);border-radius:999px;padding:8px 12px;background:rgba(255,255,255,.08);font-weight:780}
+.lang-switch{display:flex;gap:8px;flex-wrap:wrap}.lang-switch button{font:inherit;font-size:13px;font-weight:780;cursor:pointer;color:var(--ink);background:rgba(255,255,255,.08);border:1px solid var(--line);border-radius:999px;padding:8px 12px}.lang-switch button[aria-current="true"]{background:var(--green);color:#05140f;border-color:var(--green)}
 .mark{width:38px;height:38px;border-radius:10px;background:linear-gradient(90deg,#5a351f,#9a6538 48%,#3d2318);position:relative;box-shadow:inset 0 0 0 2px rgba(255,255,255,.08),0 8px 20px rgba(0,0,0,.28)}.mark:before,.mark:after{content:"";position:absolute;background:#111;border-radius:50%;top:12px;width:6px;height:6px}.mark:before{left:10px}.mark:after{right:10px}.mark i{position:absolute;left:13px;right:13px;bottom:9px;height:3px;background:#15100d;border-radius:999px}
 .hero-inner{max-width:1120px;margin:0 auto;padding:54px 22px 108px;position:relative;z-index:1;display:grid;grid-template-columns:minmax(0,650px) minmax(260px,340px);gap:42px;align-items:center}.eyebrow{font-size:12px;color:#8affd7;font-weight:900;letter-spacing:.08em;text-transform:uppercase;margin:0 0 12px}h1{font-size:clamp(42px,7vw,84px);line-height:1;margin:0 0 14px;letter-spacing:0;overflow-wrap:anywhere}.subtitle{font-size:clamp(18px,2.6vw,27px);font-weight:900;margin:0 0 18px;color:#fff2dd}.lead{font-size:17px;color:var(--muted);max-width:650px;margin:0}.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}.btn{display:inline-flex;align-items:center;justify-content:center;text-decoration:none;border-radius:999px;padding:12px 17px;border:1px solid var(--line);font-weight:850;color:var(--ink);background:rgba(255,255,255,.1);min-height:46px}.btn.primary{background:var(--green);color:#05140f;border-color:var(--green)}.btn.disabled{opacity:.82;cursor:default}
 .hero-icon{width:min(300px,78vw);aspect-ratio:1;margin:auto;border-radius:32px;background:radial-gradient(circle at 50% 42%,#bf8650 0 20%,#89552f 21% 56%,#3b2419 57% 100%);box-shadow:0 28px 90px rgba(0,0,0,.45);position:relative;overflow:hidden;transform:rotate(2deg)}.hero-icon:before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(90deg,rgba(255,255,255,.08) 0 8px,rgba(0,0,0,.09) 8px 18px);mix-blend-mode:soft-light}.hero-icon:after{content:"";position:absolute;left:25%;right:25%;bottom:31%;height:10px;background:#140f0b;border-radius:999px;box-shadow:0 -64px 0 -2px #111,70px -64px 0 -2px #111}
@@ -23,32 +24,33 @@ a{color:inherit}.hero{min-height:92vh;position:relative;overflow:hidden;color:va
 .section{padding:78px 22px;background:var(--paper)}.section.dark{background:#07110e;color:var(--ink)}.inner{max-width:1120px;margin:0 auto}.section h2{font-size:clamp(28px,4vw,46px);line-height:1.18;margin:0 0 16px}.section-lead{max-width:780px;color:#5d7169;margin:0 0 30px}.dark .section-lead{color:#c5d7d0}.feature-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.feature{background:#fff;border:1px solid rgba(21,34,29,.1);border-radius:8px;padding:22px;box-shadow:0 14px 40px rgba(12,48,38,.08)}.feature h3{margin:0 0 8px;font-size:18px}.feature p{margin:0;color:#5d7169}.feature.green{border-top:4px solid var(--green)}.feature.teal{border-top:4px solid var(--teal)}.feature.amber{border-top:4px solid var(--amber)}
 .screenshot-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:28px}.screenshot{background:#fff;border:1px solid rgba(21,34,29,.1);border-radius:8px;overflow:hidden;box-shadow:0 14px 40px rgba(12,48,38,.08)}.shot-art{height:210px;background:linear-gradient(145deg,#0b1210,#0f2a25);position:relative}.shot-art:before{content:"";position:absolute;inset:38px 42px;border:1px solid rgba(91,229,184,.22);background:linear-gradient(90deg,rgba(69,211,167,.06),rgba(199,139,73,.08))}.shot-art:after{content:"";position:absolute;left:50%;top:18%;width:28%;height:64%;transform:translateX(-50%);background:radial-gradient(circle at 50% 12%,rgba(138,255,215,.4),transparent 24%),linear-gradient(180deg,rgba(255,255,255,.18),rgba(255,255,255,.02));clip-path:polygon(43% 0,57% 0,100% 100%,0 100%);opacity:.8}.screenshot span{display:block;padding:12px 12px 14px;font-weight:850;color:#183b34;font-size:13px}
 .legal-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.legal-card{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:8px;padding:22px;text-decoration:none;color:#edf8ff}.legal-card h3{margin:0 0 8px}.legal-card p{margin:0;color:#bfd1ca}.notice{color:#bfd1ca;font-size:13px;margin:24px 0 0}.footer{padding:30px 22px;background:#040907;color:#aec3ba;text-align:center;font-size:12px}
-@media(max-width:860px){.hero-inner{grid-template-columns:1fr}.hero-icon{display:none}.feature-grid,.legal-grid,.value-strip,.screenshot-grid{grid-template-columns:1fr}.hero{min-height:0}.nav{align-items:flex-start;flex-direction:column}.nav-links{display:grid;grid-template-columns:1fr;width:100%}.nav-links a{text-align:center}.btn{width:100%}.section{padding:58px 18px}}
+@media(max-width:860px){.hero-inner{grid-template-columns:1fr}.hero-icon{display:none}.feature-grid,.legal-grid,.value-strip,.screenshot-grid{grid-template-columns:1fr}.hero{min-height:0}.nav{align-items:flex-start;flex-direction:column}.nav-links{display:grid;grid-template-columns:1fr;width:100%}.nav-links a{text-align:center}.lang-switch{justify-content:center}.btn{width:100%}.section{padding:58px 18px}}
 </style>
 </head>
 <body>
 <header class="hero">
 <nav class="nav">
-<a class="brand" href="index.html"><span class="mark" aria-hidden="true"><i></i></span>トゥントゥン脱出 公式サイト</a>
+<a class="brand" href="index.html"><span class="mark" aria-hidden="true"><i></i></span><span data-i18n="brand">トゥントゥン脱出 公式サイト</span></a>
 <div class="nav-links">
-<a href="../index.html">WasabiBeans 開発者ホームページ</a>
-<a href="../links/index.html">WasabiBeans SNSリンク集</a>
+<a href="../index.html" data-i18n="navHome">WasabiBeans 開発者ホームページ</a>
+<a href="../links/index.html" data-i18n="navLinks">WasabiBeans SNSリンク集</a>
+<span class="lang-switch" role="group" aria-label="Language"><button type="button" data-lang-btn="ja">日本語</button><button type="button" data-lang-btn="en">English</button></span>
 </div>
 </nav>
 <div class="hero-inner">
 <div>
 <p class="eyebrow">Offline Horror Escape Game</p>
-<h1>トゥントゥン脱出</h1>
-<p class="subtitle">暗いウォードを抜け、出口を探す。</p>
-<p class="lead">トゥントゥン脱出は、無料・オフラインで遊べる一人称ホラー脱出ゲームです。暗い施設を探索し、カードキーを集め、音と灯りを頼りに出口を目指します。ThungThungEscape is a free offline first-person horror escape game. Explore a dark ward, collect keycards, and find the exit.</p>
+<h1 data-i18n="h1">トゥントゥン脱出</h1>
+<p class="subtitle" data-i18n="subtitle">暗いウォードを抜け、出口を探す。</p>
+<p class="lead" data-i18n="lead">トゥントゥン脱出は、無料・オフラインで遊べる一人称ホラー脱出ゲームです。暗い施設を探索し、カードキーを集め、音と灯りを頼りに出口を目指します。</p>
 <div class="actions">
-<span class="btn primary disabled">App Storeで配信予定</span>
-<a class="btn" href="support.html">サポート / Support</a>
+<span class="btn primary disabled" data-i18n="badge">App Storeで配信予定</span>
+<a class="btn" href="support.html" data-i18n="btnSupport">サポート</a>
 </div>
 <div class="value-strip" aria-label="トゥントゥン脱出の特徴">
-<div class="value"><b>無料・オフライン</b><span>No account, no ads at this time</span></div>
-<div class="value"><b>短編ホラー</b><span>Sound, darkness, and escape tension</span></div>
-<div class="value"><b>データ収集なし</b><span>No personal or usage data collection</span></div>
+<div class="value"><b data-i18n="v1b">無料・オフライン</b><span data-i18n="v1s">アカウント不要・現時点で広告なし</span></div>
+<div class="value"><b data-i18n="v2b">短編ホラー</b><span data-i18n="v2s">音・暗闇・脱出の緊張感</span></div>
+<div class="value"><b data-i18n="v3b">データ収集なし</b><span data-i18n="v3s">個人情報も利用データも集めません</span></div>
 </div>
 </div>
 <div class="hero-icon" aria-hidden="true"></div>
@@ -58,41 +60,119 @@ a{color:inherit}.hero{min-height:92vh;position:relative;overflow:hidden;color:va
 <section class="section">
 <div class="inner">
 <p class="eyebrow">Game Overview</p>
-<h2>見える範囲が限られるほど、音が近くなる。</h2>
-<p class="section-lead">暗い施設の中でカードキーを探し、出口までたどり着く短編ホラーです。敵の気配、足音、打音、懐中電灯の明かりを頼りに、安全なルートを選びます。</p>
+<h2 data-i18n="s1h2">見える範囲が限られるほど、音が近くなる。</h2>
+<p class="section-lead" data-i18n="s1lead">暗い施設の中でカードキーを探し、出口までたどり着く短編ホラーです。敵の気配、足音、打音、懐中電灯の明かりを頼りに、安全なルートを選びます。</p>
 <div class="feature-grid">
-<div class="feature green"><h3>探索して集める</h3><p>暗い通路と小部屋を巡り、脱出に必要なカードキーを集めます。</p></div>
-<div class="feature teal"><h3>音で気配を読む</h3><p>敵の方向や距離を、立体的な音と環境音から感じ取れます。</p></div>
-<div class="feature amber"><h3>短く遊べる</h3><p>スマートフォンでも遊びやすい、1プレイ完結型のホラー脱出体験です。</p></div>
+<div class="feature green"><h3 data-i18n="f1h">探索して集める</h3><p data-i18n="f1p">暗い通路と小部屋を巡り、脱出に必要なカードキーを集めます。</p></div>
+<div class="feature teal"><h3 data-i18n="f2h">音で気配を読む</h3><p data-i18n="f2p">敵の方向や距離を、立体的な音と環境音から感じ取れます。</p></div>
+<div class="feature amber"><h3 data-i18n="f3h">短く遊べる</h3><p data-i18n="f3p">スマートフォンでも遊びやすい、1プレイ完結型のホラー脱出体験です。</p></div>
 </div>
 </div>
 </section>
 <section class="section">
 <div class="inner">
 <p class="eyebrow">Screens</p>
-<h2>暗闇、カードキー、出口。</h2>
-<p class="section-lead">スクリーンショットは公開準備中です。公開後は、暗い通路、カードキー探索、出口への脱出画面を掲載します。</p>
+<h2 data-i18n="s2h2">暗闇、カードキー、出口。</h2>
+<p class="section-lead" data-i18n="s2lead">スクリーンショットは公開準備中です。公開後は、暗い通路、カードキー探索、出口への脱出画面を掲載します。</p>
 <div class="screenshot-grid" aria-label="トゥントゥン脱出の画面枠">
-<div class="screenshot"><div class="shot-art" aria-hidden="true"></div><span>暗い通路を進む / Dark corridors</span></div>
-<div class="screenshot"><div class="shot-art" aria-hidden="true"></div><span>カードキーを探す / Keycard hunt</span></div>
-<div class="screenshot"><div class="shot-art" aria-hidden="true"></div><span>出口へ向かう / Find the exit</span></div>
+<div class="screenshot"><div class="shot-art" aria-hidden="true"></div><span data-i18n="shot1">暗い通路を進む</span></div>
+<div class="screenshot"><div class="shot-art" aria-hidden="true"></div><span data-i18n="shot2">カードキーを探す</span></div>
+<div class="screenshot"><div class="shot-art" aria-hidden="true"></div><span data-i18n="shot3">出口へ向かう</span></div>
 </div>
 </div>
 </section>
 <section class="section dark">
 <div class="inner">
 <p class="eyebrow">Privacy First</p>
-<h2>アカウントなし。広告なし。外部送信なし。</h2>
-<p class="section-lead">トゥントゥン脱出は、現時点で個人情報や利用データを収集しません。アカウント登録は不要で、広告も表示しません。ゲームプレイのために、サーバーへデータを送信することもありません。</p>
+<h2 data-i18n="s3h2">アカウントなし。広告なし。外部送信なし。</h2>
+<p class="section-lead" data-i18n="s3lead">トゥントゥン脱出は、現時点で個人情報や利用データを収集しません。アカウント登録は不要で、広告も表示しません。ゲームプレイのために、サーバーへデータを送信することもありません。</p>
 <div class="legal-grid">
-<a class="legal-card" href="privacy-policy.html"><h3>プライバシーポリシー</h3><p>収集しない情報、外部送信の有無。</p></a>
-<a class="legal-card" href="terms-of-use.html"><h3>利用規約</h3><p>利用条件、免責事項、問い合わせ先。</p></a>
-<a class="legal-card" href="support.html"><h3>サポート</h3><p>FAQと不具合報告フォーム。</p></a>
+<a class="legal-card" href="privacy-policy.html"><h3 data-i18n="lc1h">プライバシーポリシー</h3><p data-i18n="lc1p">収集しない情報、外部送信の有無。</p></a>
+<a class="legal-card" href="terms-of-use.html"><h3 data-i18n="lc2h">利用規約</h3><p data-i18n="lc2p">利用条件、免責事項、問い合わせ先。</p></a>
+<a class="legal-card" href="support.html"><h3 data-i18n="lc3h">サポート</h3><p data-i18n="lc3p">FAQと不具合報告フォーム。</p></a>
 </div>
-<p class="notice">App Storeの公開URLが確定した後、このページの導線を更新します。</p>
+<p class="notice" data-i18n="notice">App Storeの公開URLが確定した後、このページの導線を更新します。</p>
 </div>
 </section>
 </main>
-<footer class="footer">最終更新日: 2026年6月16日<br>© 2026 WasabiBeans. All rights reserved.</footer>
+<footer class="footer" data-i18n-html="footer">最終更新日: 2026年6月16日<br>© 2026 WasabiBeans. All rights reserved.</footer>
+<script>
+var I18N = {
+  en: {
+    __title: "ThungThungEscape Official Site",
+    __desc: "ThungThungEscape is a free, offline first-person horror escape game. Explore a dark ward, collect keycards, and find the exit.",
+    brand: "ThungThungEscape Official Site",
+    navHome: "WasabiBeans Home",
+    navLinks: "WasabiBeans social links",
+    h1: "ThungThungEscape",
+    subtitle: "Slip through the dark ward and find the exit.",
+    lead: "ThungThungEscape is a free, offline first-person horror escape game. Explore a dark facility, collect keycards, and use sound and light to reach the exit.",
+    badge: "Coming soon to the App Store",
+    btnSupport: "Support",
+    v1b: "Free & offline", v1s: "No account, no ads right now",
+    v2b: "Short-form horror", v2s: "Sound, darkness, and escape tension",
+    v3b: "No data collection", v3s: "No personal or usage data collected",
+    s1h2: "The less you can see, the closer the sounds feel.",
+    s1lead: "A short horror game where you search a dark facility for keycards and make it to the exit. Read enemy presence, footsteps, banging, and your flashlight beam to pick a safe route.",
+    f1h: "Explore and collect", f1p: "Roam dark corridors and small rooms to gather the keycards you need to escape.",
+    f2h: "Read presence by sound", f2p: "Sense an enemy's direction and distance from spatial audio and ambience.",
+    f3h: "Plays in short sessions", f3p: "A self-contained horror escape experience that's easy to play on a phone.",
+    s2h2: "Darkness, keycards, the exit.",
+    s2lead: "Screenshots are being prepared. After release, we'll show the dark corridors, the keycard hunt, and the escape to the exit.",
+    shot1: "Dark corridors", shot2: "Keycard hunt", shot3: "Find the exit",
+    s3h2: "No account. No ads. Nothing sent out.",
+    s3lead: "ThungThungEscape does not collect personal or usage data at this time. No account is required, and no ads are shown. The game does not send data to any server to play.",
+    lc1h: "Privacy Policy", lc1p: "What we don't collect, and whether data is sent out.",
+    lc2h: "Terms of Use", lc2p: "Terms, disclaimers, and contact.",
+    lc3h: "Support", lc3p: "FAQ and the bug report form.",
+    notice: "We'll update the links on this page once the App Store URL is confirmed.",
+    footer: "Last updated: June 16, 2026<br>© 2026 WasabiBeans. All rights reserved."
+  }
+};
+</script>
+<script>
+(function () {
+  var KEY = "wb_lang", DEF = "ja", SUP = ["ja", "en"], T = I18N;
+  function pick() {
+    try {
+      var u = new URLSearchParams(location.search).get("lang");
+      if (u && SUP.indexOf(u) >= 0) return u;
+      var s = localStorage.getItem(KEY);
+      if (s && SUP.indexOf(s) >= 0) return s;
+    } catch (e) {}
+    var n = (navigator.language || "").toLowerCase();
+    for (var i = 0; i < SUP.length; i++) if (n.indexOf(SUP[i]) === 0) return SUP[i];
+    return DEF;
+  }
+  var oT = document.title, mD = document.querySelector('meta[name="description"]'), oD = mD ? mD.getAttribute("content") : "";
+  function apply(l) {
+    var d = T[l] || {};
+    document.documentElement.lang = l;
+    document.querySelectorAll("[data-i18n]").forEach(function (el) {
+      if (el.dataset.ja == null) el.dataset.ja = el.textContent;
+      var k = el.getAttribute("data-i18n");
+      el.textContent = (l === DEF) ? el.dataset.ja : (d[k] != null ? d[k] : el.dataset.ja);
+    });
+    document.querySelectorAll("[data-i18n-html]").forEach(function (el) {
+      if (el.getAttribute("data-ja-html") == null) el.setAttribute("data-ja-html", el.innerHTML);
+      var k = el.getAttribute("data-i18n-html");
+      el.innerHTML = (l === DEF) ? el.getAttribute("data-ja-html") : (d[k] != null ? d[k] : el.getAttribute("data-ja-html"));
+    });
+    document.title = (l === DEF) ? oT : (d.__title || oT);
+    if (mD) mD.setAttribute("content", (l === DEF) ? oD : (d.__desc || oD));
+    document.querySelectorAll("[data-lang-btn]").forEach(function (b) {
+      b.setAttribute("aria-current", b.getAttribute("data-lang-btn") === l ? "true" : "false");
+    });
+    try { localStorage.setItem(KEY, l); } catch (e) {}
+  }
+  window.__wbSetLang = apply;
+  document.addEventListener("DOMContentLoaded", function () {
+    document.querySelectorAll("[data-lang-btn]").forEach(function (b) {
+      b.addEventListener("click", function (e) { e.preventDefault(); apply(b.getAttribute("data-lang-btn")); });
+    });
+    apply(pick());
+  });
+})();
+</script>
 </body>
 </html>

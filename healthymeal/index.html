@@ -17,6 +17,9 @@ a{color:inherit}
 .brand img{width:34px;height:34px;border-radius:9px;object-fit:cover}
 .nav-links{display:flex;gap:10px;flex-wrap:wrap;justify-content:flex-end}
 .nav-links a{font-size:13px;text-decoration:none;border:1px solid rgba(40,55,31,.16);border-radius:999px;padding:8px 12px;background:rgba(255,255,255,.62);font-weight:760}
+.lang-links{max-width:1140px;margin:-26px auto 34px;display:flex;gap:10px;flex-wrap:wrap;justify-content:flex-end;position:relative;z-index:1}
+.lang-links a{font-size:13px;text-decoration:none;border:1px solid rgba(40,55,31,.16);border-radius:999px;padding:8px 12px;background:rgba(255,255,255,.74);font-weight:760}
+.lang-links a:hover{border-color:rgba(47,207,105,.38)}
 .hero-grid{max-width:1140px;margin:0 auto;display:grid;grid-template-columns:minmax(0,1fr) minmax(340px,520px);gap:46px;align-items:center;position:relative;z-index:1}
 .eyebrow{font-size:12px;color:#537034;font-weight:900;letter-spacing:.08em;text-transform:uppercase;margin:0 0 12px}
 .name{font-size:clamp(38px,6vw,76px);line-height:1.04;margin:0 0 12px;letter-spacing:0;overflow-wrap:anywhere;word-break:break-all;line-break:anywhere}
@@ -47,10 +50,11 @@ a{color:inherit}
 .legal{background:#111a12;color:#edf5e6}.legal .eyebrow{color:#bfe47d}.legal .section-lead{color:#bdcab5}.legal-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.legal-card{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:8px;padding:22px;text-decoration:none;color:#edf5e6}.legal-card h3{margin:0 0 8px}.legal-card p{margin:0;color:#bdcab5}
 .footer{padding:30px 22px;background:#0b110c;color:#b9c4b3;text-align:center;font-size:12px}
 @media(max-width:900px){.hero-grid,.video-panel{grid-template-columns:1fr}.hero{min-height:0}.hero-media{max-width:560px}.shots{grid-template-columns:repeat(2,minmax(0,1fr))}.feature-grid,.legal-grid,.value-strip{grid-template-columns:1fr}.hero-shot:first-child,.hero-shot:nth-child(2){transform:none}}
-@media(max-width:520px){body{overflow-x:hidden}.nav{align-items:flex-start;flex-direction:column}.nav-links{display:grid;grid-template-columns:1fr;width:100%;justify-content:stretch}.nav-links a{font-size:12px;text-align:center;white-space:normal}.name,.subtitle,.lead{width:100%;max-width:330px}.hero-media{grid-template-columns:1fr 1fr;gap:10px}.shots{grid-template-columns:1fr}.name{font-size:40px}.section{padding:58px 18px}.hero{padding-left:18px;padding-right:18px}.btn{width:100%}}
+@media(max-width:520px){body{overflow-x:hidden}.nav{align-items:flex-start;flex-direction:column}.nav-links{display:grid;grid-template-columns:1fr;width:100%;justify-content:stretch}.nav-links a{font-size:12px;text-align:center;white-space:normal}.lang-links{display:grid;grid-template-columns:1fr 1fr;width:100%;margin:0 auto 28px}.lang-links a{font-size:12px;text-align:center}.name,.subtitle,.lead{width:100%;max-width:330px}.hero-media{grid-template-columns:1fr 1fr;gap:10px}.shots{grid-template-columns:1fr}.name{font-size:40px}.section{padding:58px 18px}.hero{padding-left:18px;padding-right:18px}.btn{width:100%}}
 </style>
 </head>
 <body>
+<section id="ja" lang="ja">
 <header class="hero">
 <nav class="nav">
 <a class="brand" href="index.html"><img src="../assets/healthymeal-app-icon.png" alt="HealthyMealアプリアイコン">HealthyMeal 公式サイト</a>
@@ -59,6 +63,7 @@ a{color:inherit}
 <a href="../links/index.html">WasabiBeans SNSリンク集</a>
 </div>
 </nav>
+<div class="lang-links"><a href="#ja">日本語</a><a href="#en">English</a></div>
 <div class="hero-grid">
 <div>
 <p class="eyebrow">iOS App</p>
@@ -128,5 +133,87 @@ a{color:inherit}
 </section>
 </main>
 <footer class="footer">最終更新日: 2026年6月2日<br>© 2026 WasabiBeans. All rights reserved.</footer>
+</section>
+
+<section id="en" lang="en">
+<header class="hero">
+<nav class="nav">
+<a class="brand" href="index.html"><img src="../assets/healthymeal-app-icon.png" alt="HealthyMeal app icon">HealthyMeal Official Website</a>
+<div class="nav-links">
+<a href="../index.html">WasabiBeans Home</a>
+<a href="../links/index.html">WasabiBeans Social Links</a>
+</div>
+</nav>
+<div class="lang-links"><a href="#ja">日本語</a><a href="#en">English</a></div>
+<div class="hero-grid">
+<div>
+<p class="eyebrow">iOS App</p>
+<h1 class="name">HealthyMeal</h1>
+<p class="subtitle">AI Meal Plans and Beginner Workout Management</p>
+<p class="lead">For days when planning meals feels like too much, or when you just want to move a little. HealthyMeal brings meals, workouts, and records together so health management is easier to keep up with on iPhone.</p>
+<div class="actions">
+<a class="btn primary" href="https://apps.apple.com/app/id6769673379">View on the App Store</a>
+<a class="btn" href="support.html">HealthyMeal Support Page</a>
+</div>
+<div class="value-strip" aria-label="HealthyMeal value">
+<div class="value"><b>Less meal planning</b><span>Quick ideas for today's meals</span></div>
+<div class="value"><b>Easier to start moving</b><span>Begin with beginner-friendly workouts</span></div>
+<div class="value"><b>Records stay organized</b><span>Water, weight, and shopping in one place</span></div>
+</div>
+</div>
+<div class="hero-media" aria-label="HealthyMeal App Store images">
+<img class="hero-shot" src="../assets/healthymeal-appstore-01.png" alt="HealthyMeal meal suggestion screen">
+<img class="hero-shot" src="../assets/healthymeal-appstore-02.png" alt="HealthyMeal workout management screen">
+</div>
+</div>
+</header>
+
+<main>
+<section class="section">
+<div class="inner">
+<p class="eyebrow">What You Can Do</p>
+<h2>Keep daily health management in one simple flow.</h2>
+<p class="section-lead">Choose meals, start workouts, and record water intake or weight. HealthyMeal brings scattered daily health habits together in one place.</p>
+<div class="shots">
+<figure class="shot-card"><img src="../assets/healthymeal-appstore-01.png" alt="Promotional image for choosing meals"><figcaption>Meal ideas</figcaption></figure>
+<figure class="shot-card"><img src="../assets/healthymeal-appstore-02.png" alt="Promotional image for continuing workouts"><figcaption>Workout habit</figcaption></figure>
+<figure class="shot-card"><img src="../assets/healthymeal-appstore-03.png" alt="Promotional image for daily records"><figcaption>Daily records</figcaption></figure>
+<figure class="shot-card"><img src="../assets/healthymeal-appstore-04.png" alt="Promotional image for shopping lists"><figcaption>Shopping organized</figcaption></figure>
+<figure class="shot-card"><img src="../assets/healthymeal-appstore-05.png" alt="Promotional image for profile management"><figcaption>Goal management</figcaption></figure>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="inner video-panel">
+<div>
+<p class="eyebrow">Short Demo</p>
+<h2>Spend less time deciding, and turn today into action.</h2>
+<p class="section-lead">Watch a short demo to see the flow from meal planning to workouts and daily records.</p>
+<div class="feature-grid">
+<div class="feature accent-one"><h3>Meal ideas</h3><p>Reduce the daily "what should I eat?" moment and find meal options that fit your goals.</p></div>
+<div class="feature accent-two"><h3>Lower the workout barrier</h3><p>Begin with beginner-friendly workouts that make it easier to move a little at a time.</p></div>
+<div class="feature accent-three"><h3>See the days you kept going</h3><p>Keep water, weight, and shopping lists together so daily changes are easier to notice.</p></div>
+</div>
+</div>
+<video class="preview-video" src="../assets/healthymeal-sns-promo.mp4" controls muted playsinline preload="metadata" poster="../assets/healthymeal-appstore-01.png"></video>
+</div>
+</section>
+
+<section class="section legal">
+<div class="inner">
+<p class="eyebrow">Support</p>
+<h2>Pages for using HealthyMeal with confidence</h2>
+<p class="section-lead">Find information about data handling, usage terms, and where to contact us if you need help.</p>
+<div class="legal-grid">
+<a class="legal-card" href="privacy-policy.html"><h3>HealthyMeal Privacy Policy</h3><p>Data handling, third-party services, and user rights.</p></a>
+<a class="legal-card" href="terms-of-use.html"><h3>HealthyMeal Terms of Use</h3><p>Usage conditions, disclaimers, and subscriptions.</p></a>
+<a class="legal-card" href="support.html"><h3>HealthyMeal Support Page</h3><p>FAQ and the support form for bug reports.</p></a>
+</div>
+</div>
+</section>
+</main>
+<footer class="footer">Last updated: June 2, 2026<br>© 2026 WasabiBeans. All rights reserved.</footer>
+</section>
 </body>
 </html>

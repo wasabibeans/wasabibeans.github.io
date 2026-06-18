@@ -4,12 +4,14 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>サポート - MemeClash</title>
+<meta name="description" content="MemeClashのサポート。FAQ、お問い合わせ、不具合報告を案内します。">
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
 :root{--bg:#101014;--surface:#19191f;--accent:#ff8a2a;--text:#f5f5f7;--muted:#a1a1aa;--border:rgba(255,255,255,.1)}
 body{font-family:-apple-system,BlinkMacSystemFont,"Noto Sans JP","Hiragino Sans",sans-serif;background:#101014;color:var(--text);line-height:1.8}
 .wrap{max-width:860px;margin:0 auto;padding:42px 22px}
 a{color:#7dd3fc}.back{display:inline-block;margin-bottom:24px;color:var(--muted);text-decoration:none}
+.lang-switch{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:22px}.lang-switch button{font:inherit;font-size:13px;font-weight:700;cursor:pointer;color:var(--text);background:rgba(255,255,255,.06);border:1px solid var(--border);border-radius:999px;padding:7px 12px}.lang-switch button[aria-current="true"]{background:var(--accent);color:#111;border-color:var(--accent)}
 h1{font-size:30px;margin-bottom:10px}.intro{color:var(--muted);margin-bottom:24px}
 section{background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:22px;margin:14px 0}
 h2{font-size:18px;color:var(--accent);margin-bottom:10px}p,li{font-size:14px;color:var(--muted)}ul{padding-left:20px}
@@ -19,14 +21,117 @@ footer{border-top:1px solid var(--border);margin-top:28px;padding-top:22px;color
 </head>
 <body>
 <div class="wrap">
-<a class="back" href="index.html">← MemeClash 公式サイトへ戻る</a>
-<h1>MemeClash サポートページ</h1>
-<p class="intro">MemeClashに関するよくある質問とお問い合わせ方法です。</p>
-<section><h2>お問い合わせ</h2><p>MemeClashの不具合報告、ご質問、ご要望はMemeClash 不具合報告フォームからご連絡ください。個人メールアドレスは掲載していません。</p><a class="btn" href="https://github.com/wasabibeans/wasabibeans.github.io/issues">MemeClash 不具合報告フォーム</a></section>
-<section><h2>FAQ</h2><ul><li>ゲームが止まった場合: アプリを一度閉じて再起動してください。</li><li>広告が表示されない場合: 通信環境を確認し、少し時間を置いて再度お試しください。</li><li>リワードが付与されない場合: 広告を最後まで視聴したか確認してください。</li><li>キャラクターが解放されない場合: 条件達成後、画面を切り替えるか再起動してください。</li><li>対応端末: iOS 17以降、Metal対応のiPhone/iPadを推奨します。</li><li>課金機能: 現時点ではアプリ内課金はありません。</li></ul></section>
-<section><h2>不具合報告に書いてほしいこと</h2><ul><li>使っている端末名</li><li>iOSのバージョン</li><li>何をした時に起きたか</li><li>可能であればスクリーンショット</li></ul></section>
-<section><h2>関連ページ</h2><p><a href="index.html">MemeClash 公式サイト</a> / <a href="privacy-policy.html">MemeClash プライバシーポリシー</a> / <a href="terms-of-use.html">MemeClash 利用規約</a></p></section>
-<footer>最終更新日: 2026年6月2日<br>© 2026 WasabiBeans. All rights reserved.</footer>
+<a class="back" href="index.html" data-i18n="back">← MemeClash 公式サイトへ戻る</a>
+<div class="lang-switch" role="group" aria-label="Language">
+<button type="button" data-lang-btn="ja">日本語</button>
+<button type="button" data-lang-btn="en">English</button>
+<button type="button" data-lang-btn="ko">한국어</button>
 </div>
+<h1 data-i18n="h1">MemeClash サポートページ</h1>
+<p class="intro" data-i18n="intro">MemeClashに関するよくある質問とお問い合わせ方法です。</p>
+<section><h2 data-i18n="s1h2">お問い合わせ</h2><p data-i18n="s1p">MemeClashの不具合報告、ご質問、ご要望はMemeClash 不具合報告フォームからご連絡ください。個人メールアドレスは掲載していません。</p><a class="btn" href="https://github.com/wasabibeans/wasabibeans.github.io/issues" data-i18n="s1btn">MemeClash 不具合報告フォーム</a></section>
+<section><h2 data-i18n="s2h2">FAQ</h2><ul><li data-i18n="faq1">ゲームが止まった場合: アプリを一度閉じて再起動してください。</li><li data-i18n="faq2">広告が表示されない場合: 通信環境を確認し、少し時間を置いて再度お試しください。</li><li data-i18n="faq3">リワードが付与されない場合: 広告を最後まで視聴したか確認してください。</li><li data-i18n="faq4">キャラクターが解放されない場合: 条件達成後、画面を切り替えるか再起動してください。</li><li data-i18n="faq5">対応端末: iOS 17以降、Metal対応のiPhone/iPadを推奨します。</li><li data-i18n="faq6">課金機能: 現時点ではアプリ内課金はありません。</li></ul></section>
+<section><h2 data-i18n="s3h2">不具合報告に書いてほしいこと</h2><ul><li data-i18n="rep1">使っている端末名</li><li data-i18n="rep2">iOSのバージョン</li><li data-i18n="rep3">何をした時に起きたか</li><li data-i18n="rep4">可能であればスクリーンショット</li></ul></section>
+<section><h2 data-i18n="s4h2">関連ページ</h2><p data-i18n-html="s4p"><a href="index.html">MemeClash 公式サイト</a> / <a href="privacy-policy.html">MemeClash プライバシーポリシー</a> / <a href="terms-of-use.html">MemeClash 利用規約</a></p></section>
+<footer data-i18n-html="footer">最終更新日: 2026年6月2日<br>© 2026 WasabiBeans. All rights reserved.</footer>
+</div>
+<script>
+var I18N = {
+  en: {
+    __title: "Support - MemeClash",
+    __desc: "MemeClash support: FAQ, contact, and bug reports.",
+    back: "← Back to the MemeClash site",
+    h1: "MemeClash Support",
+    intro: "Frequently asked questions about MemeClash and how to contact us.",
+    s1h2: "Contact",
+    s1p: "For bug reports, questions, or requests about MemeClash, please reach us through the MemeClash bug report form. We do not list a personal email address.",
+    s1btn: "MemeClash bug report form",
+    s2h2: "FAQ",
+    faq1: "If the game freezes: close the app once and restart it.",
+    faq2: "If ads don't appear: check your connection and try again after a short while.",
+    faq3: "If a reward isn't granted: make sure you watched the ad to the end.",
+    faq4: "If a character doesn't unlock: after meeting the condition, switch screens or restart the app.",
+    faq5: "Supported devices: iPhone and iPad running iOS 17 or later with Metal support are recommended.",
+    faq6: "Purchases: there are no in-app purchases at this time.",
+    s3h2: "What to include in a bug report",
+    rep1: "The device you're using",
+    rep2: "Your iOS version",
+    rep3: "What you were doing when it happened",
+    rep4: "A screenshot, if possible",
+    s4h2: "Related pages",
+    s4p: '<a href="index.html">MemeClash Official Site</a> / <a href="privacy-policy.html">MemeClash Privacy Policy</a> / <a href="terms-of-use.html">MemeClash Terms of Use</a>',
+    footer: "Last updated: June 2, 2026<br>© 2026 WasabiBeans. All rights reserved."
+  },
+  ko: {
+    __title: "지원 - MemeClash",
+    __desc: "MemeClash 지원: FAQ, 문의, 버그 신고 안내.",
+    back: "← MemeClash 공식 사이트로",
+    h1: "MemeClash 지원 페이지",
+    intro: "MemeClash에 관한 자주 묻는 질문과 문의 방법입니다.",
+    s1h2: "문의",
+    s1p: "MemeClash 버그 신고, 질문, 요청은 MemeClash 버그 신고 양식으로 연락해 주세요. 개인 이메일 주소는 게재하지 않습니다.",
+    s1btn: "MemeClash 버그 신고 양식",
+    s2h2: "FAQ",
+    faq1: "게임이 멈춘 경우: 앱을 한 번 닫고 다시 시작해 주세요.",
+    faq2: "광고가 표시되지 않는 경우: 통신 환경을 확인하고 잠시 후 다시 시도해 주세요.",
+    faq3: "리워드가 지급되지 않는 경우: 광고를 끝까지 시청했는지 확인해 주세요.",
+    faq4: "캐릭터가 해방되지 않는 경우: 조건 달성 후 화면을 전환하거나 다시 시작해 주세요.",
+    faq5: "지원 기기: iOS 17 이상, Metal을 지원하는 iPhone/iPad를 권장합니다.",
+    faq6: "결제 기능: 현재 앱 내 결제는 없습니다.",
+    s3h2: "버그 신고에 적어 주실 내용",
+    rep1: "사용 중인 기기 이름",
+    rep2: "iOS 버전",
+    rep3: "어떤 동작에서 발생했는지",
+    rep4: "가능하면 스크린샷",
+    s4h2: "관련 페이지",
+    s4p: '<a href="index.html">MemeClash 공식 사이트</a> / <a href="privacy-policy.html">MemeClash 개인정보 처리방침</a> / <a href="terms-of-use.html">MemeClash 이용약관</a>',
+    footer: "최종 업데이트: 2026년 6월 2일<br>© 2026 WasabiBeans. All rights reserved."
+  }
+};
+</script>
+<script>
+(function () {
+  var KEY = "wb_lang", DEF = "ja", SUP = ["ja", "en", "ko"], T = I18N;
+  function pick() {
+    try {
+      var u = new URLSearchParams(location.search).get("lang");
+      if (u && SUP.indexOf(u) >= 0) return u;
+      var s = localStorage.getItem(KEY);
+      if (s && SUP.indexOf(s) >= 0) return s;
+    } catch (e) {}
+    var n = (navigator.language || "").toLowerCase();
+    for (var i = 0; i < SUP.length; i++) if (n.indexOf(SUP[i]) === 0) return SUP[i];
+    return DEF;
+  }
+  var oT = document.title, mD = document.querySelector('meta[name="description"]'), oD = mD ? mD.getAttribute("content") : "";
+  function apply(l) {
+    var d = T[l] || {};
+    document.documentElement.lang = l;
+    document.querySelectorAll("[data-i18n]").forEach(function (el) {
+      if (el.dataset.ja == null) el.dataset.ja = el.textContent;
+      var k = el.getAttribute("data-i18n");
+      el.textContent = (l === DEF) ? el.dataset.ja : (d[k] != null ? d[k] : el.dataset.ja);
+    });
+    document.querySelectorAll("[data-i18n-html]").forEach(function (el) {
+      if (el.getAttribute("data-ja-html") == null) el.setAttribute("data-ja-html", el.innerHTML);
+      var k = el.getAttribute("data-i18n-html");
+      el.innerHTML = (l === DEF) ? el.getAttribute("data-ja-html") : (d[k] != null ? d[k] : el.getAttribute("data-ja-html"));
+    });
+    document.title = (l === DEF) ? oT : (d.__title || oT);
+    if (mD) mD.setAttribute("content", (l === DEF) ? oD : (d.__desc || oD));
+    document.querySelectorAll("[data-lang-btn]").forEach(function (b) {
+      b.setAttribute("aria-current", b.getAttribute("data-lang-btn") === l ? "true" : "false");
+    });
+    try { localStorage.setItem(KEY, l); } catch (e) {}
+  }
+  window.__wbSetLang = apply;
+  document.addEventListener("DOMContentLoaded", function () {
+    document.querySelectorAll("[data-lang-btn]").forEach(function (b) {
+      b.addEventListener("click", function (e) { e.preventDefault(); apply(b.getAttribute("data-lang-btn")); });
+    });
+    apply(pick());
+  });
+})();
+</script>
 </body>
 </html>

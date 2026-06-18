@@ -16,7 +16,8 @@ a{color:inherit}
 .nav{max-width:1140px;margin:0 auto;padding:28px 22px 36px;display:flex;justify-content:space-between;gap:16px;align-items:center;position:relative;z-index:1}
 .brand{display:flex;align-items:center;gap:10px;text-decoration:none;font-weight:900}
 .brand img{width:36px;height:36px;border-radius:10px;object-fit:cover;box-shadow:0 8px 20px rgba(0,0,0,.32)}
-.nav-links{display:flex;gap:10px;flex-wrap:wrap;justify-content:flex-end}.nav-links a{font-size:13px;text-decoration:none;border:1px solid var(--line);border-radius:999px;padding:8px 12px;background:rgba(255,255,255,.08);font-weight:780}
+.nav-links{display:flex;gap:10px;flex-wrap:wrap;justify-content:flex-end;align-items:center}.nav-links a{font-size:13px;text-decoration:none;border:1px solid var(--line);border-radius:999px;padding:8px 12px;background:rgba(255,255,255,.08);font-weight:780}
+.lang-switch{display:flex;gap:8px;flex-wrap:wrap}.lang-switch button{font:inherit;font-size:13px;font-weight:780;cursor:pointer;color:var(--ink);background:rgba(255,255,255,.08);border:1px solid var(--line);border-radius:999px;padding:8px 12px}.lang-switch button[aria-current="true"]{background:var(--orange);color:#17110b;border-color:var(--orange)}
 .hero-inner{max-width:1140px;margin:0 auto;padding:54px 22px 90px;position:relative;z-index:1;display:grid;grid-template-columns:minmax(0,650px) minmax(250px,360px);gap:44px;align-items:center}
 .eyebrow{font-size:12px;color:#ffd08f;font-weight:900;letter-spacing:.08em;text-transform:uppercase;margin:0 0 12px}
 h1{font-size:clamp(44px,7vw,86px);line-height:1;margin:0 0 14px;letter-spacing:0;overflow-wrap:anywhere;word-break:break-all;line-break:anywhere}.subtitle{font-size:clamp(18px,2.7vw,28px);font-weight:900;margin:0 0 18px;color:#fff3dc;overflow-wrap:anywhere;word-break:break-all;line-break:anywhere}.lead{font-size:17px;color:var(--muted);max-width:650px;margin:0;overflow-wrap:normal;word-break:normal;line-break:strict}
@@ -29,32 +30,33 @@ h1{font-size:clamp(44px,7vw,86px);line-height:1;margin:0 0 14px;letter-spacing:0
 .legal-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.legal-card{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:8px;padding:22px;text-decoration:none;color:#edf5e6}.legal-card h3{margin:0 0 8px}.legal-card p{margin:0;color:#bdcab5}
 .notice{color:#c4c1b7;font-size:13px;margin:24px 0 0}.footer{padding:30px 22px;background:#090b10;color:#b9c4b3;text-align:center;font-size:12px}
 @media(max-width:900px){.hero-inner,.visual-grid{grid-template-columns:1fr}.hero-icon{display:none}.feature-grid,.legal-grid,.value-strip{grid-template-columns:1fr}.hero{min-height:0}.hero:before{background:linear-gradient(180deg,rgba(6,8,12,.92) 0%,rgba(6,8,12,.76) 54%,rgba(6,8,12,.5) 100%),url("../assets/memeclash-hero.png") center/cover no-repeat}.nav{align-items:flex-start}}
-@media(max-width:520px){body{overflow-x:hidden}.hero-inner{padding:36px 18px 70px}.nav{padding-left:18px;padding-right:18px;flex-direction:column}.nav-links{display:grid;grid-template-columns:1fr;width:100%;justify-content:stretch}.nav-links a{font-size:12px;text-align:center;white-space:normal}h1,.subtitle,.lead{width:100%;max-width:330px}.btn{width:100%}.section{padding:58px 18px}h1{font-size:46px}}
+@media(max-width:520px){body{overflow-x:hidden}.hero-inner{padding:36px 18px 70px}.nav{padding-left:18px;padding-right:18px;flex-direction:column}.nav-links{display:grid;grid-template-columns:1fr;width:100%;justify-content:stretch}.nav-links a{font-size:12px;text-align:center;white-space:normal}.lang-switch{justify-content:center}h1,.subtitle,.lead{width:100%;max-width:330px}.btn{width:100%}.section{padding:58px 18px}h1{font-size:46px}}
 </style>
 </head>
 <body>
 <header class="hero">
 <nav class="nav">
-<a class="brand" href="index.html"><img src="../assets/memeclash-app-icon.png" alt="MemeClashアプリアイコン">MemeClash 公式サイト</a>
+<a class="brand" href="index.html"><img src="../assets/memeclash-app-icon.png" alt="MemeClashアプリアイコン"><span data-i18n="brand">MemeClash 公式サイト</span></a>
 <div class="nav-links">
-<a href="../index.html">WasabiBeans 開発者ホームページ</a>
-<a href="../links/index.html">WasabiBeans SNSリンク集</a>
+<a href="../index.html" data-i18n="navHome">WasabiBeans 開発者ホームページ</a>
+<a href="../links/index.html" data-i18n="navLinks">WasabiBeans SNSリンク集</a>
+<span class="lang-switch" role="group" aria-label="Language"><button type="button" data-lang-btn="ja">日本語</button><button type="button" data-lang-btn="en">English</button><button type="button" data-lang-btn="ko">한국어</button></span>
 </div>
 </nav>
 <div class="hero-inner">
 <div>
 <p class="eyebrow">iOS Casual Battle Game</p>
 <h1>MemeClash</h1>
-<p class="subtitle">クセの強いキャラで、テンポよく戦う。</p>
-<p class="lead">ミームキャラクターたちが、属性、確率、必殺技でぶつかり合うカジュアル3Dバトルゲーム。短時間でも勝負が動く、軽く遊べるiPhone向けゲームです。</p>
+<p class="subtitle" data-i18n="subtitle">クセの強いキャラで、テンポよく戦う。</p>
+<p class="lead" data-i18n="lead">ミームキャラクターたちが、属性、確率、必殺技でぶつかり合うカジュアル3Dバトルゲーム。短時間でも勝負が動く、軽く遊べるiPhone向けゲームです。</p>
 <div class="actions">
-<a class="btn primary" href="https://apps.apple.com/app/id6775121939">App Storeで見る</a>
-<a class="btn" href="support.html">MemeClash サポートページ</a>
+<a class="btn primary" href="https://apps.apple.com/app/id6775121939" data-i18n="btnStore">App Storeで見る</a>
+<a class="btn" href="support.html" data-i18n="btnSupport">MemeClash サポートページ</a>
 </div>
 <div class="value-strip" aria-label="MemeClashの価値">
-<div class="value"><b>すぐ戦える</b><span>直感的なコマンド選択</span></div>
-<div class="value"><b>毎回ゆれる</b><span>確率と属性で勝負が変化</span></div>
-<div class="value"><b>集めたくなる</b><span>個性あるキャラを解放</span></div>
+<div class="value"><b data-i18n="v1b">すぐ戦える</b><span data-i18n="v1s">直感的なコマンド選択</span></div>
+<div class="value"><b data-i18n="v2b">毎回ゆれる</b><span data-i18n="v2s">確率と属性で勝負が変化</span></div>
+<div class="value"><b data-i18n="v3b">集めたくなる</b><span data-i18n="v3s">個性あるキャラを解放</span></div>
 </div>
 </div>
 <img class="hero-icon" src="../assets/memeclash-app-icon.png" alt="MemeClashアプリアイコン">
@@ -65,12 +67,12 @@ h1{font-size:clamp(44px,7vw,86px);line-height:1;margin:0 0 14px;letter-spacing:0
 <section class="section">
 <div class="inner">
 <p class="eyebrow">Why Play</p>
-<h2>短い時間で、ちゃんと盛り上がる。</h2>
-<p class="section-lead">MemeClashは、気軽に始められる3Dバトルゲームです。クセのあるキャラ、確率で動く勝負、次を試したくなる解放要素で、1プレイの中にちょっとした山場を作ります。</p>
+<h2 data-i18n="s1h2">短い時間で、ちゃんと盛り上がる。</h2>
+<p class="section-lead" data-i18n="s1lead">MemeClashは、気軽に始められる3Dバトルゲームです。クセのあるキャラ、確率で動く勝負、次を試したくなる解放要素で、1プレイの中にちょっとした山場を作ります。</p>
 <div class="feature-grid">
-<div class="feature orange"><h3>3Dバトル演出</h3><p>木製キャラや個性ある相手が、コミカルな動きでぶつかります。</p></div>
-<div class="feature teal"><h3>属性と確率</h3><p>相性、スタン、ギャンブルムーブで、短い対戦にも山場を作ります。</p></div>
-<div class="feature pink"><h3>キャラ解放</h3><p>遊ぶほど新しいキャラクターが増え、次の対戦を試したくなる設計です。</p></div>
+<div class="feature orange"><h3 data-i18n="f1h">3Dバトル演出</h3><p data-i18n="f1p">木製キャラや個性ある相手が、コミカルな動きでぶつかります。</p></div>
+<div class="feature teal"><h3 data-i18n="f2h">属性と確率</h3><p data-i18n="f2p">相性、スタン、ギャンブルムーブで、短い対戦にも山場を作ります。</p></div>
+<div class="feature pink"><h3 data-i18n="f3h">キャラ解放</h3><p data-i18n="f3p">遊ぶほど新しいキャラクターが増え、次の対戦を試したくなる設計です。</p></div>
 </div>
 </div>
 </section>
@@ -82,10 +84,10 @@ h1{font-size:clamp(44px,7vw,86px);line-height:1;margin:0 0 14px;letter-spacing:0
 </figure>
 <div class="stack">
 <p class="eyebrow">Battle Mood</p>
-<h2>見た瞬間に、遊び方が伝わる。</h2>
-<div class="mini"><h3>キャラで笑える</h3><p>木製キャラや不思議な相手が、ゆるくて勢いのあるバトルを作ります。</p></div>
-<div class="mini"><h3>テンポよく遊べる</h3><p>長く構えなくても、短い時間で勝負の変化を楽しめます。</p></div>
-<div class="mini"><h3>次を試したくなる</h3><p>キャラごとの違いや解放要素で、もう一戦だけ遊びたくなる流れを目指しています。</p></div>
+<h2 data-i18n="s2h2">見た瞬間に、遊び方が伝わる。</h2>
+<div class="mini"><h3 data-i18n="m1h">キャラで笑える</h3><p data-i18n="m1p">木製キャラや不思議な相手が、ゆるくて勢いのあるバトルを作ります。</p></div>
+<div class="mini"><h3 data-i18n="m2h">テンポよく遊べる</h3><p data-i18n="m2p">長く構えなくても、短い時間で勝負の変化を楽しめます。</p></div>
+<div class="mini"><h3 data-i18n="m3h">次を試したくなる</h3><p data-i18n="m3p">キャラごとの違いや解放要素で、もう一戦だけ遊びたくなる流れを目指しています。</p></div>
 </div>
 </div>
 </section>
@@ -93,17 +95,125 @@ h1{font-size:clamp(44px,7vw,86px);line-height:1;margin:0 0 14px;letter-spacing:0
 <section class="section dark">
 <div class="inner">
 <p class="eyebrow">Support</p>
-<h2>安心して遊ぶためのページ</h2>
-<p class="section-lead">データの扱い、利用条件、困った時の連絡先をまとめています。</p>
+<h2 data-i18n="s3h2">安心して遊ぶためのページ</h2>
+<p class="section-lead" data-i18n="s3lead">データの扱い、利用条件、困った時の連絡先をまとめています。</p>
 <div class="legal-grid">
-<a class="legal-card" href="privacy-policy.html"><h3>MemeClash プライバシーポリシー</h3><p>広告、Unity、データの扱いに関する案内。</p></a>
-<a class="legal-card" href="terms-of-use.html"><h3>MemeClash 利用規約</h3><p>利用条件、免責事項、広告表示について。</p></a>
-<a class="legal-card" href="support.html"><h3>MemeClash サポートページ</h3><p>FAQと不具合報告フォームへの導線。</p></a>
+<a class="legal-card" href="privacy-policy.html"><h3 data-i18n="lc1h">MemeClash プライバシーポリシー</h3><p data-i18n="lc1p">広告、Unity、データの扱いに関する案内。</p></a>
+<a class="legal-card" href="terms-of-use.html"><h3 data-i18n="lc2h">MemeClash 利用規約</h3><p data-i18n="lc2p">利用条件、免責事項、広告表示について。</p></a>
+<a class="legal-card" href="support.html"><h3 data-i18n="lc3h">MemeClash サポートページ</h3><p data-i18n="lc3p">FAQと不具合報告フォームへの導線。</p></a>
 </div>
-<p class="notice">MemeClashはApp Storeで公開中です。アプリの入手や詳細確認は「App Storeで見る」から進めます。</p>
+<p class="notice" data-i18n="notice">MemeClashはApp Storeで公開中です。アプリの入手や詳細確認は「App Storeで見る」から進めます。</p>
 </div>
 </section>
 </main>
-<footer class="footer">最終更新日: 2026年6月10日<br>© 2026 WasabiBeans. All rights reserved.</footer>
+<footer class="footer" data-i18n-html="footer">最終更新日: 2026年6月10日<br>© 2026 WasabiBeans. All rights reserved.</footer>
+<script>
+var I18N = {
+  en: {
+    __title: "MemeClash Official Site",
+    __desc: "MemeClash is a casual 3D battle game for iOS where quirky meme characters fight it out.",
+    brand: "MemeClash Official Site",
+    navHome: "WasabiBeans Home",
+    navLinks: "WasabiBeans social links",
+    subtitle: "Fight at a brisk pace with characters full of personality.",
+    lead: "A casual 3D battle game where meme characters clash through elements, chance, and special moves. Matches swing fast, so it's easy to enjoy in short sessions on iPhone.",
+    btnStore: "View on the App Store",
+    btnSupport: "MemeClash support",
+    v1b: "Jump right in", v1s: "Intuitive command picks",
+    v2b: "Always shifting", v2s: "Odds and elements change the match",
+    v3b: "Worth collecting", v3s: "Unlock characters with personality",
+    s1h2: "A real spark in a short session.",
+    s1lead: "MemeClash is a 3D battle game that's easy to pick up. Quirky characters, chance-driven matches, and unlocks that keep you coming back give every round a little lift.",
+    f1h: "3D battle staging", f1p: "Wooden characters and quirky rivals clash with comical motion.",
+    f2h: "Elements and odds", f2p: "Match-ups, stuns, and gamble moves keep even short bouts lively.",
+    f3h: "Character unlocks", f3p: "The more you play, the more characters you unlock, drawing you into the next match.",
+    s2h2: "You get how to play at a glance.",
+    m1h: "Characters make you grin", m1p: "Wooden characters and odd rivals make for loose, high-energy battles.",
+    m2h: "Plays at a good pace", m2p: "No need to settle in for long — enjoy the swings of a match in a short time.",
+    m3h: "One more match", m3p: "Character differences and unlocks aim to make you want just one more battle.",
+    s3h2: "Pages for playing with peace of mind",
+    s3lead: "How your data is handled, the terms of use, and where to reach us if you run into trouble.",
+    lc1h: "MemeClash Privacy Policy", lc1p: "About ads, Unity, and how data is handled.",
+    lc2h: "MemeClash Terms of Use", lc2p: "Terms, disclaimers, and ad display.",
+    lc3h: "MemeClash Support", lc3p: "FAQ and a link to the bug report form.",
+    notice: 'MemeClash is available on the App Store. Tap "View on the App Store" to get the app or see details.',
+    footer: "Last updated: June 10, 2026<br>© 2026 WasabiBeans. All rights reserved."
+  },
+  ko: {
+    __title: "MemeClash 공식 사이트",
+    __desc: "MemeClash는 개성 넘치는 밈 캐릭터로 싸우는 iOS용 캐주얼 3D 배틀 게임입니다.",
+    brand: "MemeClash 공식 사이트",
+    navHome: "WasabiBeans 개발자 홈",
+    navLinks: "WasabiBeans SNS 링크 모음",
+    subtitle: "개성 강한 캐릭터로 경쾌하게 싸우자.",
+    lead: "밈 캐릭터들이 속성, 확률, 필살기로 맞붙는 캐주얼 3D 배틀 게임. 짧은 시간에도 승부가 요동치는, 가볍게 즐기는 iPhone용 게임입니다.",
+    btnStore: "App Store에서 보기",
+    btnSupport: "MemeClash 지원 페이지",
+    v1b: "바로 전투", v1s: "직관적인 커맨드 선택",
+    v2b: "매번 요동", v2s: "확률과 속성으로 승부가 변화",
+    v3b: "모으고 싶어", v3s: "개성 있는 캐릭터 해금",
+    s1h2: "짧은 시간에도 제대로 달아오른다.",
+    s1lead: "MemeClash는 부담 없이 시작할 수 있는 3D 배틀 게임입니다. 개성 있는 캐릭터, 확률로 흐르는 승부, 다음 판을 시험하고 싶어지는 해금 요소로 한 판마다 작은 고비를 만듭니다.",
+    f1h: "3D 배틀 연출", f1p: "나무 캐릭터와 개성 있는 상대가 코믹한 움직임으로 맞붙습니다.",
+    f2h: "속성과 확률", f2p: "상성, 스턴, 갬블 무브로 짧은 대전에도 절정을 만듭니다.",
+    f3h: "캐릭터 해금", f3p: "플레이할수록 새로운 캐릭터가 늘어나 다음 대전을 시험하고 싶어지는 구조입니다.",
+    s2h2: "보는 순간 노는 법이 전해진다.",
+    m1h: "캐릭터로 웃게 된다", m1p: "나무 캐릭터와 신기한 상대가 느슨하면서 기세 있는 배틀을 만듭니다.",
+    m2h: "경쾌하게 즐긴다", m2p: "길게 자세 잡지 않아도 짧은 시간에 승부의 변화를 즐길 수 있습니다.",
+    m3h: "다음을 시험하고 싶다", m3p: "캐릭터별 차이와 해금 요소로 한 판만 더 하고 싶어지는 흐름을 노립니다.",
+    s3h2: "안심하고 즐기기 위한 페이지",
+    s3lead: "데이터 취급, 이용 조건, 문제가 있을 때의 연락처를 정리했습니다.",
+    lc1h: "MemeClash 개인정보 처리방침", lc1p: "광고, Unity, 데이터 취급에 관한 안내.",
+    lc2h: "MemeClash 이용약관", lc2p: "이용 조건, 면책 사항, 광고 표시에 대해.",
+    lc3h: "MemeClash 지원 페이지", lc3p: "FAQ와 버그 신고 양식 링크.",
+    notice: 'MemeClash는 App Store에서 공개 중입니다. 앱 다운로드나 자세한 내용은 "App Store에서 보기"에서 확인하세요.',
+    footer: "최종 업데이트: 2026년 6월 10일<br>© 2026 WasabiBeans. All rights reserved."
+  }
+};
+</script>
+<script>
+(function () {
+  var KEY = "wb_lang", DEF = "ja", SUP = ["ja", "en", "ko"], T = I18N;
+  function pick() {
+    try {
+      var u = new URLSearchParams(location.search).get("lang");
+      if (u && SUP.indexOf(u) >= 0) return u;
+      var s = localStorage.getItem(KEY);
+      if (s && SUP.indexOf(s) >= 0) return s;
+    } catch (e) {}
+    var n = (navigator.language || "").toLowerCase();
+    for (var i = 0; i < SUP.length; i++) if (n.indexOf(SUP[i]) === 0) return SUP[i];
+    return DEF;
+  }
+  var oT = document.title, mD = document.querySelector('meta[name="description"]'), oD = mD ? mD.getAttribute("content") : "";
+  function apply(l) {
+    var d = T[l] || {};
+    document.documentElement.lang = l;
+    document.querySelectorAll("[data-i18n]").forEach(function (el) {
+      if (el.dataset.ja == null) el.dataset.ja = el.textContent;
+      var k = el.getAttribute("data-i18n");
+      el.textContent = (l === DEF) ? el.dataset.ja : (d[k] != null ? d[k] : el.dataset.ja);
+    });
+    document.querySelectorAll("[data-i18n-html]").forEach(function (el) {
+      if (el.getAttribute("data-ja-html") == null) el.setAttribute("data-ja-html", el.innerHTML);
+      var k = el.getAttribute("data-i18n-html");
+      el.innerHTML = (l === DEF) ? el.getAttribute("data-ja-html") : (d[k] != null ? d[k] : el.getAttribute("data-ja-html"));
+    });
+    document.title = (l === DEF) ? oT : (d.__title || oT);
+    if (mD) mD.setAttribute("content", (l === DEF) ? oD : (d.__desc || oD));
+    document.querySelectorAll("[data-lang-btn]").forEach(function (b) {
+      b.setAttribute("aria-current", b.getAttribute("data-lang-btn") === l ? "true" : "false");
+    });
+    try { localStorage.setItem(KEY, l); } catch (e) {}
+  }
+  window.__wbSetLang = apply;
+  document.addEventListener("DOMContentLoaded", function () {
+    document.querySelectorAll("[data-lang-btn]").forEach(function (b) {
+      b.addEventListener("click", function (e) { e.preventDefault(); apply(b.getAttribute("data-lang-btn")); });
+    });
+    apply(pick());
+  });
+})();
+</script>
 </body>
 </html>

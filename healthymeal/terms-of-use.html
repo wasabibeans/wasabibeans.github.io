@@ -7,7 +7,7 @@
 <meta name="description" content="HealthyMealアプリの利用規約。サービス内容、免責事項、サブスクリプションについて。">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 :root{--bg:#0a0e17;--surface:#131825;--surface2:#1a2035;--accent:#34d399;--accent2:#06b6d4;--text:#e2e8f0;--text-muted:#94a3b8;--border:rgba(255,255,255,0.06);--gradient:linear-gradient(135deg,#34d399,#06b6d4)}
@@ -18,6 +18,9 @@ header a{color:var(--text-muted);text-decoration:none;font-size:13px;transition:
 header a:hover{color:var(--accent)}
 h1{font-size:24px;font-weight:700;background:var(--gradient);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin:16px 0 8px}
 .intro{font-size:14px;color:var(--text-muted);line-height:1.7;margin-bottom:32px;text-align:center}
+.lang-links{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin:0 0 24px}
+.lang-links a{padding:7px 13px;background:var(--surface);border:1px solid var(--border);border-radius:999px;color:var(--text-muted);text-decoration:none;font-size:13px;transition:all 0.2s}
+.lang-links a:hover{color:var(--accent);border-color:rgba(52,211,153,0.3)}
 .section{background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:24px;margin-bottom:16px}
 .section h2{font-size:16px;font-weight:600;color:var(--accent);margin-bottom:14px;padding-bottom:10px;border-bottom:1px solid var(--border)}
 .section p,.section li{font-size:13px;line-height:1.8;color:var(--text-muted)}
@@ -48,7 +51,9 @@ footer p{font-size:12px;color:var(--text-muted)}
 <h1>HealthyMeal 利用規約</h1>
 </header>
 <p class="intro">HealthyMeal - AI健康献立と初心者筋トレ管理 利用規約</p>
+<div class="lang-links"><a href="#ja">日本語</a><a href="#en">English</a></div>
 
+<section id="ja" lang="ja">
 <div class="section">
 <h2>第1条（適用）</h2>
 <p>本利用規約（以下「本規約」）は、開発者が提供するiOSアプリケーション「HealthyMeal - AI健康献立と初心者筋トレ管理」（以下「本アプリ」）の利用条件を定めるものです。ユーザーは本アプリをダウンロードまたは使用することにより、本規約に同意したものとみなします。</p>
@@ -156,9 +161,120 @@ footer p{font-size:12px;color:var(--text-muted)}
 <a href="support.html">HealthyMeal サポートページ</a>
 <a href="privacy-policy.html">HealthyMeal プライバシーポリシー</a>
 </nav>
+</section>
+
+<section id="en" lang="en">
+<div class="section">
+<h2>Article 1 (Application)</h2>
+<p>These Terms of Use (the "Terms") set forth the conditions of use for the iOS application "HealthyMeal - AI Meal Plans and Beginner Workout Management" (the "App") provided by the developer. Users are deemed to have agreed to these Terms by downloading or using the App.</p>
+</div>
+
+<div class="section">
+<h2>Article 2 (Service Content)</h2>
+<p>The App provides the following services:</p>
+<ul>
+<li>AI meal plan suggestions</li>
+<li>Calculation and display of nutritional balance (PFC)</li>
+<li>Beginner-friendly strength training suggestions</li>
+<li>Water intake and body weight record management</li>
+<li>Growth elements using a Shiba dog character</li>
+<li>Reminder functions through push notifications (meals, hydration, and workouts)</li>
+<li>Integration with Apple Health (HealthKit) (displaying steps and active energy burned, and automatically writing body weight and water data)</li>
+<li>Estimated display of basal metabolic rate (BMR), total daily energy expenditure (TDEE), and target calorie intake according to weight loss or weight gain periods</li>
+<li>SNS share card feature</li>
+<li>Consecutive record streak feature</li>
+</ul>
+</div>
+
+<div class="section">
+<h2>Article 3 (Disclaimer Regarding Medical and Health Information)</h2>
+<ol>
+<li>The nutritional information, calorie calculations including BMR/TDEE, PFC balance, meal suggestions, and exercise suggestions provided by the App are intended to provide general health information and do not constitute medical practice, medical advice, diagnosis, or treatment.</li>
+<li>The information in the App is based on public guidelines such as the Ministry of Health, Labour and Welfare's "Dietary Reference Intakes for Japanese" and general nutrition science, but it does not guarantee suitability for an individual's health condition.</li>
+<li>If you have health issues, dietary restrictions, chronic illnesses, or similar concerns, be sure to consult a physician, registered dietitian, or other specialist.</li>
+<li>The developer assumes no responsibility for any damages arising from actions taken based on the information in the App.</li>
+</ol>
+</div>
+
+<div class="section">
+<h2>Article 4 (Subscription)</h2>
+<ol>
+<li>The App provides premium features called "Shiba Supporter" as an auto-renewable subscription (monthly plan and annual plan).</li>
+<li><strong>Monthly plan:</strong> Automatically renews at ¥480/month (tax included).</li>
+<li><strong>Annual plan:</strong> Automatically renews at ¥3,900/year (tax included).</li>
+<li>Payment is processed by Apple through the payment method linked to the user's Apple ID.</li>
+<li>RevenueCat may be used to determine the purchase status, restoration, and validity of subscriptions. The payment processing itself is carried out through Apple's App Store payment system.</li>
+<li>The subscription automatically renews unless canceled at least 24 hours before the end of the current period.</li>
+<li>Subscriptions can be managed and canceled from iPhone Settings &gt; Apple ID &gt; Subscriptions.</li>
+<li>If a free trial period is available, it will automatically convert to a paid subscription after the trial period ends. Any unused portion of the trial period will be forfeited when a subscription is purchased.</li>
+<li>Users who purchased the App during the period when it was sold as a paid app ("Early Supporters") can use all Shiba Supporter premium features indefinitely and free of charge as a thank-you benefit. This benefit is automatically determined and applied within the App, so no special procedure is required.</li>
+<li>The Early Supporter benefit applies only to the Apple ID that installed the App during the paid sales period. If the benefit is no longer applied due to a change of Apple ID, reinstallation of the App, or similar reasons, the developer has no obligation to restore it.</li>
+</ol>
+</div>
+
+<div class="section">
+<h2>Article 5 (Intellectual Property Rights)</h2>
+<p>Copyrights and other intellectual property rights related to the App's content (text, images, designs, characters, icons, and similar materials) belong to the developer.</p>
+</div>
+
+<div class="section">
+<h2>Article 6 (Prohibited Acts)</h2>
+<p>Users must not engage in the following acts:</p>
+<ul>
+<li>Decompiling, reverse engineering, or modifying the App</li>
+<li>Unauthorized reproduction or redistribution of the App's content</li>
+<li>Illegal acts using the App</li>
+</ul>
+</div>
+
+<div class="section">
+<h2>Article 7 (Handling of Data)</h2>
+<ol>
+<li>Data entered in the App (physical information, meal records, exercise records, and similar data) is, in principle, stored only on the user's device and is not collected or transmitted to external servers or similar systems on the developer side.</li>
+<li>Only when the user permits Apple Health integration, the App reads step count and calorie data from Health and displays it on the screen, and automatically writes and syncs body weight and water intake to Apple Health (HealthKit).</li>
+<li>To maintain free provision of the App through advertising revenue, the App uses Google AdMob. For the display of banner ads, interstitial ads, and rewarded ads, and for personalized ad display and delivery optimization, device identifiers (IDFA) and ad usage data may be collected and used by Google and third-party ad providers based on user consent (ATT: App Tracking Transparency permission). For details, please see the <a href="privacy-policy.html" style="color:var(--accent)">HealthyMeal Privacy Policy</a>.</li>
+<li>The App may use RevenueCat to confirm subscription status, restore purchases, and determine the validity of premium features.</li>
+<li>In-app bonuses from rewarded ads are granted when the ad is watched to the end. Depending on the communication environment, ad inventory, device status, and similar conditions, ads may not be displayed or bonuses may not be granted.</li>
+<li>For details on the handling of data, please see the <a href="privacy-policy.html" style="color:var(--accent)">HealthyMeal Privacy Policy</a>.</li>
+</ol>
+</div>
+
+<div class="section">
+<h2>Article 8 (Disclaimer)</h2>
+<ol>
+<li>The developer makes no warranties regarding the accuracy, completeness, or usefulness of the content of the App.</li>
+<li>The developer assumes no responsibility for any direct or indirect damages arising from use of the App.</li>
+<li>The App is provided "as is" (AS IS).</li>
+<li>The App may not operate normally depending on the communication environment, device condition, or similar factors, and the developer assumes no responsibility for this.</li>
+<li>Even if the developer's liability cannot be completely exempted under laws and regulations, the upper limit of the developer's liability for damages shall be the amount actually paid by the user for the App.</li>
+</ol>
+</div>
+
+<div class="section">
+<h2>Article 9 (Changes to the Terms)</h2>
+<p>The developer may change these Terms as necessary. The revised Terms of Use take effect when published in the App or on the App Store.</p>
+</div>
+
+<div class="section">
+<h2>Article 10 (Governing Law and Jurisdiction)</h2>
+<p>These Terms are governed by the laws of Japan, and the Okinawa District Court shall be the exclusive court of agreed jurisdiction in the first instance for disputes related to these Terms.</p>
+</div>
+
+<div class="contact-card">
+<h2>Contact</h2>
+<p>For inquiries regarding these Terms of Use, please contact us from the link below.</p>
+<a href="https://github.com/wasabibeans/wasabibeans.github.io/issues" class="contact-btn">HealthyMeal Support Form</a>
+</div>
+
+<nav>
+<a href="index.html">HealthyMeal Official Website</a>
+<a href="support.html">HealthyMeal Support Page</a>
+<a href="privacy-policy.html">HealthyMeal Privacy Policy</a>
+</nav>
+</section>
 
 <footer>
-<p>最終更新日: 2026年6月2日<br>© 2026 WasabiBeans. All rights reserved.</p>
+<p>最終更新日: 2026年6月2日<br>Last updated: June 2, 2026<br>© 2026 WasabiBeans. All rights reserved.</p>
 </footer>
 </div>
 </body>
