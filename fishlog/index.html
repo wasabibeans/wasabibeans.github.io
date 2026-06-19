@@ -11,16 +11,17 @@
 body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Hiragino Kaku Gothic ProN","Noto Sans JP",sans-serif;background:#07131d;color:var(--text);line-height:1.75}
 a{color:inherit}.hero{min-height:92vh;position:relative;overflow:hidden;color:var(--ink);background:linear-gradient(135deg,#07131d 0%,#12385f 54%,#0b5266 100%)}
 .hero:after{content:"";position:absolute;inset:auto 0 0;height:34%;background:linear-gradient(0deg,#f4fbff,rgba(244,251,255,0));pointer-events:none}
-.nav{max-width:1120px;margin:0 auto;padding:28px 22px 38px;display:flex;align-items:center;justify-content:space-between;gap:16px;position:relative;z-index:1}.brand{display:flex;align-items:center;gap:10px;text-decoration:none;font-weight:900}.brand img{width:38px;height:38px;border-radius:10px;object-fit:cover}.nav-links{display:flex;gap:10px;flex-wrap:wrap;justify-content:flex-end}.nav-links a{font-size:13px;text-decoration:none;border:1px solid var(--line);border-radius:999px;padding:8px 12px;background:rgba(255,255,255,.08);font-weight:780}
+.nav{max-width:1120px;margin:0 auto;padding:28px 22px 38px;display:flex;align-items:center;justify-content:space-between;gap:16px;position:relative;z-index:1}.brand{display:flex;align-items:center;gap:10px;text-decoration:none;font-weight:900}.brand img{width:38px;height:38px;border-radius:10px;object-fit:cover}.nav-links{display:flex;gap:10px;flex-wrap:wrap;justify-content:flex-end}.nav-links a{font-size:13px;text-decoration:none;border:1px solid var(--line);border-radius:999px;padding:8px 12px;background:rgba(255,255,255,.08);font-weight:780}.lang-links{max-width:1120px;margin:-18px auto 0;padding:0 22px;display:flex;gap:10px;flex-wrap:wrap;justify-content:flex-end;position:relative;z-index:1}.lang-links a{font-size:13px;text-decoration:none;border:1px solid var(--line);border-radius:999px;padding:8px 12px;background:rgba(255,255,255,.1);font-weight:780}.lang-links a:hover{border-color:rgba(70,198,220,.46)}
 .hero-inner{max-width:1120px;margin:0 auto;padding:58px 22px 110px;position:relative;z-index:1;display:grid;grid-template-columns:minmax(0,640px) minmax(250px,340px);gap:42px;align-items:center}.eyebrow{font-size:12px;color:#a7f3ff;font-weight:900;letter-spacing:.08em;text-transform:uppercase;margin:0 0 12px}h1{font-size:clamp(46px,7vw,88px);line-height:1;margin:0 0 14px;letter-spacing:0;overflow-wrap:anywhere}.subtitle{font-size:clamp(18px,2.6vw,28px);font-weight:900;margin:0 0 18px;color:#fff6df}.lead{font-size:17px;color:var(--muted);max-width:650px;margin:0}.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}.btn{display:inline-flex;align-items:center;justify-content:center;text-decoration:none;border-radius:999px;padding:12px 17px;border:1px solid var(--line);font-weight:850;color:var(--ink);background:rgba(255,255,255,.1);min-height:46px}.btn.primary{background:var(--orange);color:#fff;border-color:var(--orange)}.hero-icon{width:min(292px,78vw);margin:auto;border-radius:30px;box-shadow:0 28px 90px rgba(0,0,0,.38);transform:rotate(2deg)}
 .value-strip{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:34px;max-width:720px}.value{border:1px solid var(--line);background:rgba(255,255,255,.09);border-radius:8px;padding:14px;backdrop-filter:blur(8px)}.value b{display:block;font-size:15px;color:#fff}.value span{display:block;color:#d2e1ea;font-size:13px}
 .section{padding:78px 22px;background:var(--paper)}.section.dark{background:#07131d;color:var(--ink)}.inner{max-width:1120px;margin:0 auto}.section h2{font-size:clamp(28px,4vw,46px);line-height:1.18;margin:0 0 16px}.section-lead{max-width:740px;color:#5e7180;margin:0 0 30px}.dark .section-lead{color:#c5d4df}.feature-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.feature{background:#fff;border:1px solid rgba(18,32,49,.1);border-radius:8px;padding:22px;box-shadow:0 14px 40px rgba(15,62,96,.08)}.feature h3{margin:0 0 8px;font-size:18px}.feature p{margin:0;color:#5e7180}.feature.blue{border-top:4px solid var(--blue)}.feature.aqua{border-top:4px solid var(--aqua)}.feature.orange{border-top:4px solid var(--orange)}
 .screenshot-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;margin-top:28px}.screenshot{background:#fff;border:1px solid rgba(18,32,49,.1);border-radius:8px;overflow:hidden;box-shadow:0 14px 40px rgba(15,62,96,.08)}.screenshot img{display:block;width:100%;height:auto}.screenshot span{display:block;padding:12px 12px 14px;font-weight:850;color:#173a5e;font-size:13px}
 .legal-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.legal-card{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:8px;padding:22px;text-decoration:none;color:#edf8ff}.legal-card h3{margin:0 0 8px}.legal-card p{margin:0;color:#bfd1de}.notice{color:#bfd1de;font-size:13px;margin:24px 0 0}.footer{padding:30px 22px;background:#040c12;color:#aec3d1;text-align:center;font-size:12px}
-@media(max-width:860px){.hero-inner{grid-template-columns:1fr}.hero-icon{display:none}.feature-grid,.legal-grid,.value-strip,.screenshot-grid{grid-template-columns:1fr}.hero{min-height:0}.nav{align-items:flex-start;flex-direction:column}.nav-links{display:grid;grid-template-columns:1fr;width:100%}.nav-links a{text-align:center}.btn{width:100%}.section{padding:58px 18px}}
+@media(max-width:860px){.hero-inner{grid-template-columns:1fr}.hero-icon{display:none}.feature-grid,.legal-grid,.value-strip,.screenshot-grid{grid-template-columns:1fr}.hero{min-height:0}.nav{align-items:flex-start;flex-direction:column}.nav-links{display:grid;grid-template-columns:1fr;width:100%}.nav-links a{text-align:center}.lang-links{display:grid;grid-template-columns:1fr 1fr;width:100%;margin:0 auto;padding:0 22px}.lang-links a{text-align:center}.btn{width:100%}.section{padding:58px 18px}}
 </style>
 </head>
 <body>
+<section id="ja" lang="ja">
 <header class="hero">
 <nav class="nav">
 <a class="brand" href="index.html"><img src="../assets/fishlog-app-icon.png" alt="FishLogアプリアイコン">FishLog 公式サイト</a>
@@ -29,6 +30,7 @@ a{color:inherit}.hero{min-height:92vh;position:relative;overflow:hidden;color:va
 <a href="../links/index.html">WasabiBeans SNSリンク集</a>
 </div>
 </nav>
+<div class="lang-links"><a href="#ja">日本語</a><a href="#en">English</a></div>
 <div class="hero-inner">
 <div>
 <p class="eyebrow">Fishing Log App</p>
@@ -90,5 +92,79 @@ a{color:inherit}.hero{min-height:92vh;position:relative;overflow:hidden;color:va
 </section>
 </main>
 <footer class="footer">最終更新日: 2026年6月12日<br>© 2026 WasabiBeans. All rights reserved.</footer>
+</section>
+
+<section id="en" lang="en">
+<header class="hero">
+<nav class="nav">
+<a class="brand" href="index.html"><img src="../assets/fishlog-app-icon.png" alt="FishLog app icon">FishLog Official Website</a>
+<div class="nav-links">
+<a href="../index.html">WasabiBeans Home</a>
+<a href="../links/index.html">WasabiBeans Social Links</a>
+</div>
+</nav>
+<div class="lang-links"><a href="#ja">日本語</a><a href="#en">English</a></div>
+<div class="hero-inner">
+<div>
+<p class="eyebrow">Fishing Log App</p>
+<h1>FishLog</h1>
+<p class="subtitle">Log every catch with photos and fishing spots.</p>
+<p class="lead">FishLog is a catch log app for iPhone and iPad that keeps species, size, weight, weather, notes, photos, and fishing locations together. Keep each trip's memories organized on your device, and make it easier to spot hints for the next catch.</p>
+<div class="actions">
+<a class="btn primary" href="https://apps.apple.com/app/id6776917939">View on the App Store</a>
+<a class="btn" href="support.html">FishLog Support Page</a>
+</div>
+<div class="value-strip" aria-label="FishLog value">
+<div class="value"><b>Catch records</b><span>Species, size, weight, and notes</span></div>
+<div class="value"><b>Photos and spots</b><span>Save memories and locations</span></div>
+<div class="value"><b>Stats and CSV</b><span>Organize without ads with Pro</span></div>
+</div>
+</div>
+<img class="hero-icon" src="../assets/fishlog-app-icon.png" alt="FishLog app icon">
+</div>
+</header>
+<main>
+<section class="section">
+<div class="inner">
+<p class="eyebrow">What You Can Do</p>
+<h2>Turn quick entries into records that help your next trip.</h2>
+<p class="section-lead">Do more than save a photo of the fish. Record size, weather, method, and location together, so the conditions that worked and your favorite spots become easier to review over time.</p>
+<div class="feature-grid">
+<div class="feature blue"><h3>Add catches quickly</h3><p>Record species, size, weight, fishing method, weather, date and time, and notes in one simple form.</p></div>
+<div class="feature aqua"><h3>Photos and location</h3><p>Attach catch photos and save where you caught the fish using your current location. Location is used only when you choose to capture it.</p></div>
+<div class="feature orange"><h3>Stats and CSV export</h3><p>With FishLog Pro, review species rankings and monthly catch trends, then export your data as CSV.</p></div>
+</div>
+</div>
+</section>
+<section class="section">
+<div class="inner">
+<p class="eyebrow">Screens</p>
+<h2>Record each catch, then find it again easily.</h2>
+<p class="section-lead">From catch lists and photo records to stats, maps, and CSV export, FishLog keeps your fishing memories in screens built for reviewing later.</p>
+<div class="screenshot-grid" aria-label="FishLog screen examples">
+<div class="screenshot"><img src="../assets/fishlog-appstore-01.png" alt="Catch list screen example"><span>Log catches fast</span></div>
+<div class="screenshot"><img src="../assets/fishlog-appstore-02.png" alt="New record screen example"><span>Add photos and places</span></div>
+<div class="screenshot"><img src="../assets/fishlog-appstore-03.png" alt="Statistics screen example"><span>Check catch trends</span></div>
+<div class="screenshot"><img src="../assets/fishlog-appstore-04.png" alt="Map screen example"><span>Review fishing spots</span></div>
+<div class="screenshot"><img src="../assets/fishlog-appstore-05.png" alt="CSV export screen example"><span>Export CSV with Pro</span></div>
+</div>
+</div>
+</section>
+<section class="section dark">
+<div class="inner">
+<p class="eyebrow">Local Records</p>
+<h2>Your catch data stays on your device. Pro removes ads.</h2>
+<p class="section-lead">Catch records, photos, and location data are saved on your device. The free version may show ads. FishLog Pro purchases are handled through Apple's App Store payment system.</p>
+<div class="legal-grid">
+<a class="legal-card" href="privacy-policy.html"><h3>FishLog Privacy Policy</h3><p>How photos, location data, and purchase information are handled.</p></a>
+<a class="legal-card" href="terms-of-use.html"><h3>FishLog Terms of Use</h3><p>Usage conditions, Pro purchases, and disclaimers.</p></a>
+<a class="legal-card" href="support.html"><h3>FishLog Support Page</h3><p>FAQ and the bug report form.</p></a>
+</div>
+<p class="notice">FishLog is available on the App Store. Use "View on the App Store" to get the app or see more details.</p>
+</div>
+</section>
+</main>
+<footer class="footer">Last updated: June 12, 2026<br>© 2026 WasabiBeans. All rights reserved.</footer>
+</section>
 </body>
 </html>
