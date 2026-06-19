@@ -23,6 +23,9 @@ a{color:inherit}
 .nav-links{display:flex;flex-wrap:wrap;gap:10px;justify-content:flex-end}
 .nav-links a,.button{border:1px solid rgba(233,247,205,.18);background:rgba(255,255,255,.06);padding:10px 14px;border-radius:999px;text-decoration:none;font-size:14px;color:#dbe7cf;transition:transform .2s ease,border-color .2s ease,background .2s ease;overflow-wrap:anywhere}
 .nav-links a:hover,.button:hover{transform:translateY(-2px);border-color:rgba(202,233,129,.48);background:rgba(255,255,255,.1)}
+.lang-links{max-width:1120px;margin:-30px auto 34px;display:flex;gap:10px;flex-wrap:wrap;justify-content:flex-end;position:relative;z-index:1}
+.lang-links a{border:1px solid rgba(233,247,205,.18);background:rgba(255,255,255,.08);padding:8px 12px;border-radius:999px;text-decoration:none;font-size:13px;color:#dbe7cf;font-weight:800}
+.lang-links a:hover{border-color:rgba(202,233,129,.48);background:rgba(255,255,255,.12)}
 .hero-grid{max-width:1120px;margin:0 auto;display:grid;grid-template-columns:minmax(0,1.03fr) minmax(280px,.72fr);gap:48px;align-items:center;position:relative;z-index:1}
 .eyebrow{color:#bfdc7b;font-size:13px;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
 h1{font-size:clamp(42px,7vw,88px);line-height:1.02;margin:14px 0 20px;letter-spacing:0;overflow-wrap:anywhere;word-break:break-all;line-break:anywhere}
@@ -65,6 +68,8 @@ body{overflow-x:hidden}
 .nav{align-items:flex-start;flex-direction:column}
 .nav-links{display:grid;grid-template-columns:1fr;width:100%;justify-content:stretch}
 .nav-links a{font-size:13px;padding:8px 10px;text-align:center;white-space:normal}
+.lang-links{display:grid;grid-template-columns:1fr 1fr;width:100%;margin:0 auto 28px}
+.lang-links a{text-align:center}
 .actions .button{width:100%;justify-content:center;text-align:center}
 h1,.lead{width:100%;max-width:330px}
 .hero-grid,.dark-band .inner{grid-template-columns:1fr}
@@ -76,6 +81,7 @@ h1,.lead{width:100%;max-width:330px}
 </style>
 </head>
 <body>
+<section id="ja" lang="ja">
 <div class="page">
 <header class="hero">
 <nav class="nav" aria-label="主要リンク">
@@ -91,6 +97,7 @@ h1,.lead{width:100%;max-width:330px}
 <a href="fishlog/index.html">FishLog 公式サイト</a>
 </div>
 </nav>
+<div class="lang-links"><a href="#ja">日本語</a><a href="#en">English</a></div>
 <div class="hero-grid">
 <div>
 <div class="eyebrow">Indie App Studio</div>
@@ -180,5 +187,114 @@ h1,.lead{width:100%;max-width:330px}
 </div>
 </footer>
 </div>
+</section>
+
+<section id="en" lang="en">
+<div class="page">
+<header class="hero">
+<nav class="nav" aria-label="Main links">
+<a class="brand" href="index.html" aria-label="WasabiBeans developer website">
+<img src="assets/wasabibeans-profile.png" alt="WasabiBeans wasabi bean mascot">
+<span>WasabiBeans</span>
+</a>
+<div class="nav-links">
+<a href="links/index.html">WasabiBeans Social Links</a>
+<a href="beanrush/index.html">Bean Rush Official Website</a>
+<a href="healthymeal/index.html">HealthyMeal Official Website</a>
+<a href="memeclash/index.html">MemeClash Official Website</a>
+<a href="fishlog/index.html">FishLog Official Website</a>
+</div>
+</nav>
+<div class="lang-links"><a href="#ja">日本語</a><a href="#en">English</a></div>
+<div class="hero-grid">
+<div>
+<div class="eyebrow">Indie App Studio</div>
+<h1>Indie apps, games, and development notes.</h1>
+<p class="lead">WasabiBeans is an independent developer creating iOS apps that make everyday life a little easier, and games you can enjoy in short sessions. This site brings together official app information, social links, and support pages.</p>
+<div class="actions">
+<a class="button primary" href="links/index.html">View WasabiBeans Social Links</a>
+<a class="button" href="#apps-en">View Official App Sites</a>
+</div>
+</div>
+<div class="mascot-card" aria-hidden="true">
+<img src="assets/wasabi-bean-mascot.png" alt="">
+</div>
+</div>
+</header>
+<main>
+<section class="section muted-band" id="apps-en">
+<div class="inner">
+<div class="section-head">
+<div>
+<p class="eyebrow">Official App Sites</p>
+<h2>Official sites for each app</h2>
+</div>
+<p>Choose an app to see its features, screenshots, and support information.</p>
+</div>
+<div class="cards">
+<a class="card" href="beanrush/index.html">
+<div class="app-head"><img src="assets/beanrush-hero.jpg" alt="Bean Rush official website image"><div>
+<div class="label">Bean Rush Official Website</div>
+<h3>Bean Rush</h3>
+</div></div>
+<p>A Japanese-style 2D sliding puzzle game where you slide beans, collect spices, and head for the pot.</p>
+<span class="link-name">Go to the Bean Rush Official Website</span>
+</a>
+<a class="card" href="healthymeal/index.html">
+<div class="app-head"><img src="assets/healthymeal-app-icon.png" alt="HealthyMeal app icon"><div>
+<div class="label">HealthyMeal Official Website</div>
+<h3>HealthyMeal</h3>
+</div></div>
+<p>Full title: HealthyMeal - AI Meal Plans and Beginner Workout Management. An iOS app for meal plans, nutrition, workouts, water, and health tracking in one place.</p>
+<span class="link-name">Go to the HealthyMeal Official Website</span>
+</a>
+<a class="card" href="memeclash/index.html">
+<div class="app-head"><img src="assets/memeclash-app-icon.png" alt="MemeClash app icon"><div>
+<div class="label">MemeClash Official Website</div>
+<h3>MemeClash</h3>
+</div></div>
+<p>A casual 3D battle game for iPhone where meme characters fight in quick, easy-to-play matches.</p>
+<span class="link-name">Go to the MemeClash Official Website</span>
+</a>
+<a class="card" href="fishlog/index.html">
+<div class="app-head"><img src="assets/fishlog-app-icon.png" alt="FishLog app icon"><div>
+<div class="label">FishLog Official Website</div>
+<h3>FishLog</h3>
+</div></div>
+<p>An iPhone fishing log app for saving fish species, size, photos, location, and weather together.</p>
+<span class="link-name">Go to the FishLog Official Website</span>
+</a>
+<a class="card" href="thungthungescape/index.html">
+<div class="app-head"><span class="app-icon thung" aria-hidden="true"><i></i></span><div>
+<div class="label">Thung Thung Escape Official Website</div>
+<h3>Thung Thung Escape</h3>
+</div></div>
+<p>A free, offline first-person horror escape game where you explore a dark facility, collect keycards, and try to reach the exit.</p>
+<span class="link-name">Go to the Thung Thung Escape Official Website</span>
+</a>
+</div>
+</div>
+</section>
+<section class="section dark-band">
+<div class="inner">
+<div class="note">
+<h3>WasabiBeans Social Links</h3>
+<p>A single link for YouTube, TikTok, Instagram, and X profiles. From here, visitors can choose official app sites, the developer website, and social accounts.</p>
+</div>
+<div class="note">
+<h3>Support</h3>
+<p>If you need help or want to report a problem, please check the support page for each app.</p>
+</div>
+</div>
+</section>
+</main>
+<footer class="footer">
+<div class="footer-inner">
+<div>© 2026 WasabiBeans. All rights reserved.</div>
+<div><a href="links/index.html">WasabiBeans Social Links</a></div>
+</div>
+</footer>
+</div>
+</section>
 </body>
 </html>

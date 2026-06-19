@@ -17,6 +17,9 @@ body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Hira
 .profile img{width:112px;height:112px;border-radius:30px;object-fit:cover;box-shadow:0 18px 45px rgba(0,0,0,.34)}
 h1{font-size:28px;margin:16px 0 4px;letter-spacing:0}
 .bio{margin:0;color:#cbd8c2;font-size:14px}
+.lang-links{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin:18px 0 0}
+.lang-links a{border:1px solid rgba(224,243,194,.14);background:rgba(255,255,255,.064);border-radius:999px;color:#f4f8ee;text-decoration:none;font-size:13px;font-weight:800;padding:8px 12px}
+.lang-links a:hover{border-color:rgba(207,238,135,.42);background:rgba(255,255,255,.096)}
 .group{margin-top:26px}
 .group-title{font-size:12px;color:#bfe47d;font-weight:800;letter-spacing:.08em;text-transform:uppercase;margin:0 0 10px 4px}
 .link{display:grid;grid-template-columns:56px 1fr;align-items:center;gap:15px;padding:14px 16px;margin-bottom:12px;border:1px solid rgba(224,243,194,.14);background:rgba(255,255,255,.064);border-radius:8px;color:#f4f8ee;text-decoration:none;transition:transform .2s ease,border-color .2s ease,background .2s ease}
@@ -35,11 +38,13 @@ h1{font-size:28px;margin:16px 0 4px;letter-spacing:0}
 </style>
 </head>
 <body>
+<section id="ja" lang="ja">
 <main class="wrap">
 <section class="profile">
 <img src="../assets/wasabibeans-profile.png" alt="WasabiBeansのプロフィール画像">
 <h1>WasabiBeans</h1>
 <p class="bio">個人開発のアプリと制作ログ。</p>
+<div class="lang-links"><a href="#ja">日本語</a><a href="#en">English</a></div>
 </section>
 
 <section class="group" aria-label="公式サイト">
@@ -100,5 +105,75 @@ h1{font-size:28px;margin:16px 0 4px;letter-spacing:0}
 
 <p class="footer">SNSプロフィールにはこのページ、<a href="index.html">WasabiBeans SNSリンク集</a> を1本だけ貼ります。</p>
 </main>
+</section>
+
+<section id="en" lang="en">
+<main class="wrap">
+<section class="profile">
+<img src="../assets/wasabibeans-profile.png" alt="WasabiBeans profile image">
+<h1>WasabiBeans</h1>
+<p class="bio">Indie apps, games, and development notes.</p>
+<div class="lang-links"><a href="#ja">日本語</a><a href="#en">English</a></div>
+</section>
+
+<section class="group" aria-label="Official websites">
+<p class="group-title">Official Sites</p>
+<a class="link" href="../index.html">
+<img class="mark" src="../assets/wasabibeans-profile.png" alt="WasabiBeans mascot icon">
+<span class="info"><span class="title">WasabiBeans Developer Website</span><span class="desc">The full brand, development approach, and app list</span></span>
+</a>
+<a class="link" href="../beanrush/index.html">
+<img class="mark" src="../assets/beanrush-hero.jpg" alt="Bean Rush official website image">
+<span class="info"><span class="title">Bean Rush Official Website</span><span class="desc">A Japanese-style sliding puzzle with beans</span></span>
+</a>
+<a class="link" href="../healthymeal/index.html">
+<img class="mark" src="../assets/healthymeal-app-icon.png" alt="HealthyMeal app icon">
+<span class="info"><span class="title">HealthyMeal Official Website</span><span class="desc">AI meal plans and beginner workout management</span></span>
+</a>
+<a class="link" href="../memeclash/index.html">
+<img class="mark" src="../assets/memeclash-app-icon.png" alt="MemeClash app icon">
+<span class="info"><span class="title">MemeClash Official Website</span><span class="desc">A casual 3D battle game for iPhone</span></span>
+</a>
+<a class="link" href="../fishlog/index.html">
+<img class="mark" src="../assets/fishlog-app-icon.png" alt="FishLog app icon">
+<span class="info"><span class="title">FishLog Official Website</span><span class="desc">An iPhone and iPad app for fishing logs and maps</span></span>
+</a>
+<a class="link" href="../thungthungescape/index.html">
+<span class="mark thung" aria-hidden="true"><i></i></span>
+<span class="info"><span class="title">Thung Thung Escape Official Website</span><span class="desc">A free, offline first-person horror escape game</span></span>
+</a>
+</section>
+
+<section class="group" aria-label="Social accounts">
+<p class="group-title">Social</p>
+<a class="link" href="https://www.youtube.com/@wasabibeans">
+<img class="mark contain" src="../assets/social-youtube.svg" alt="YouTube icon">
+<span class="info"><span class="title">WasabiBeans YouTube Channel</span><span class="desc">App introductions, dev logs, and update news</span></span>
+</a>
+<a class="link" href="https://www.tiktok.com/@wasabibeans.dev">
+<img class="mark contain" src="../assets/social-tiktok.svg" alt="TikTok icon">
+<span class="info"><span class="title">WasabiBeans TikTok Account</span><span class="desc">Short app demos and development notes</span></span>
+</a>
+<a class="link" href="https://www.instagram.com/ai_anime.studio/">
+<img class="mark contain" src="../assets/social-instagram.svg" alt="Instagram icon">
+<span class="info"><span class="title">WasabiBeans Instagram Account</span><span class="desc">Reels, images, and development records</span></span>
+</a>
+<a class="link" href="https://x.com/WasabiBeansDev">
+<img class="mark contain" src="../assets/social-x.svg" alt="X icon">
+<span class="info"><span class="title">WasabiBeans X Account</span><span class="desc">Daily progress and announcements</span></span>
+</a>
+</section>
+
+<section class="group" aria-label="Developer links">
+<p class="group-title">Developer</p>
+<a class="link" href="https://github.com/wasabibeans">
+<img class="mark" src="../assets/wasabibeans-profile.png" alt="WasabiBeans mascot icon">
+<span class="info"><span class="title">WasabiBeans GitHub Profile</span><span class="desc">Development account. Not used as the main social profile link</span></span>
+</a>
+</section>
+
+<p class="footer">Use this page, <a href="index.html">WasabiBeans Social Links</a>, as the single link in social profiles.</p>
+</main>
+</section>
 </body>
 </html>
