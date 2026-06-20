@@ -1,0 +1,16 @@
+#!/bin/sh
+# pre-commit: github.io(公開サイト/法務ページ) の staged diff を repo_audit.py で監査する一次防御。
+# 有効化: git -C <this repo> config core.hooksPath .githooks
+# repo_audit.py は親の indie-dev-hub/scripts に在る（このrepoはその配下）。--no-verify で回避可（自己責任）。
+root=$(git rev-parse --show-toplevel) || exit 0
+audit="$root/../scripts/repo_audit.py"
+[ -f "$audit" ] || exit 0  # 監査スクリプトが見つからない配置では素通り（壊さない）
+
+python3 "$audit" --staged
+if [ "$?" -eq 1 ]; then
+  echo ""
+  echo "🛑 コミット中止：秘密または個人情報の疑い（上記 file:line）。"
+  echo "   修正して再コミット。誤検知が確実なら 'git commit --no-verify'（自己責任）。"
+  exit 1
+fi
+exit 0
